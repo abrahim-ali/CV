@@ -1,405 +1,208 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شركة توصيل وَن </title>
-      <link rel="icon" type="image/png" href="favicon.png"/>
-    <!-- Google Fonts - Cairo -->
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap RTL CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
-    <!-- Font Awesome -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>قائمة تنقل استجابية</title>
+    <script src="https://cdn.emailjs.com/sdk/latest/emailjs.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
-
-    <style>
- body {
-    font-family: 'Cairo', sans-serif;
-    padding-top: 56px; /* Adjust this value based on your navbar height */
-}
-        .hero-slider {
-            position: relative;
-            height: 600px;
-        }
-        .carousel-item img {
-            height: 600px;
-            object-fit: cover;
-        }
-        .bg-dark{
-            background-color: #eb1e49 !important;
-        }
-        .hero-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            z-index: 2;
-            color: white;
-        }
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.5);
-        }
-        .navbar {
-    background-color: #eb1e49 !important;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-        .section-padding {
-            padding: 80px 0;
-        }
-        .store-badge {
-            height: 50px;
-        }
-        #navbarNav{
-            float:left!important;
-        }
-        .navbar-brand ,.nav-link{
-            color:white;
-        }
-
-        .navbar{
-            background-color: #eb1e49 !important;
-
-        }
-        .card {
-    transition: transform 0.3s ease;
-    background: white;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card-body {
-    padding: 2rem 1.5rem;
-}
-
-.card-title {
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.card-text {
-    color: #666;
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-#valuesCarousel {
-    padding-bottom: 50px;
-}
-
-#valuesCarousel .carousel-control-prev,
-#valuesCarousel .carousel-control-next {
-    width: 40px;
-    height: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#valuesCarousel .carousel-indicators button {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin: 0 5px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-size: 50%;
-}
-#testimonials {
-    background-color: #f8f9fa;
-    padding: 80px 0;
-}
-
-.testimonial-card {
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    margin-bottom: 50px;
-}
-
-.testimonial-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555;
-    font-style: italic;
-}
-
-.testimonial-name {
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.testimonial-position {
-    color: #777;
-    font-size: 0.9rem;
-}
-
-#testimonialCarousel {
-    padding-bottom: 50px;
-}
-    </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">توصــيل وَن</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#vision">رؤيتنا</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">حول الشركة </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#values">قيمنا</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://tawseel.app/en" style="color: #f3a638;">English</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
+<!-- قائمة التنقل -->
+<header>
+<nav>
+  <a href="#"style="width:55px;height:50px;"><img src="/home/abrahim/my.png" style="width:55px;height:50px;border-radius: 30px;"></a>
+  <!-- روابط القائمة على الشاشة الكبيرة -->
+  <ul>
+    <li><a href="/">الرئيسية</a></li>
+    <li><a href="#slide1">عنّا</a></li>
+    <li><a href="#servise">الخدمات</a></li>
+    <li><a href="#runapp">الانجازات</a></li>
+    <li><a href="#contactForm">اتصل بنا</a></li>
+  </ul>
+  <h2 style="color:white;font-size: 22px;height:15px; text-align: center;" > 🧑‍💻 مهندس برمجيات</h2>
+  <!-- زر الفتح على الهاتف -->
+  <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+</nav>
+
+<!-- القائمة الجانبية -->
+<div id="sideMenu" class="side-menu">
+  <div style="height:50px;display: flex;justify-content: left;"><a href="#"style="width:55px;height:50px;"><img src="/home/abrahim/Videos/Picsart/Picsart_25-05-31_19-23-31-314.png" style="width:55px;height:50px;" onclick="toggleMenu()"></a></div>
+  <div style="height:270px;margin-top: 30px;position: fixed;padding-left:20px;overflow-y: scroll;">
+    <a href="#" class="side-menu-a" onclick="toggleMenu()">الرئيسية</a>
+    <a href="#slide1" class="side-menu-a" onclick="toggleMenu()">عنّا</a>
+    <a href="#servise" class="side-menu-a" onclick="toggleMenu()">الخدمات</a>
+    <a href="#runapp" class="side-menu-a" onclick="toggleMenu()">الانجازات</a>
+    <a href="#contactForm" class="side-menu-a" onclick="toggleMenu()">اتصل بنا</a>
+  </div>
+</div>
+</header>
+  <main>
     <!-- Hero Section with Slider -->
     <div class="hero-slider">
-        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-
-                <div class="carousel-item ">
-                    <img src="2.jpg" class="d-block w-100" alt=" 2">
-                    <div class="overlay"></div>
-                </div>
-                <div class="carousel-item ">
-                    <img src="1.png" class="d-block w-100" alt=" 1">
-                    <div class="overlay"></div>
-                </div>
-                <div class="carousel-item active" >
-                    <img src="3.jpg" class="d-block w-100" alt=" 3">
-                    <div class="overlay"></div>
-                </div>
-            </div>
-            <div class="hero-content">
-                <h1>توصيل وَن خيارك الافضل والاسرع</h1>
-                <p>سرعة دقة وموثوقية مع كل طلبية</p>
-                <div class="app-badges mt-4">
-                    <a href="https://play.google.com/store/apps/details?id=com.smartapps.tawseel&hl=ar" class="ms-2">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                             alt="جوجل بلاي" class="store-badge">
-                    </a>
-                    <a href="https://apps.apple.com/us/app/%D8%AA%D9%88%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%B7%D8%B9%D8%A7%D9%85-%D9%88%D9%83%D9%84-%D8%B4%D9%8A%D8%A1-%D9%81%D9%8A-%D8%A7%D9%84%D9%8A%D9%85%D9%86/id1523170839">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
-                             alt="آب ستور" class="store-badge">
-                    </a>
-                </div>
-            </div>
+        <div id="slide1" class="slideshow"></div>
+        <div class="content">
+          <h2 style="color:white;font-size: 22px;height:15px; text-align: center;" > 🧑‍💻 مهندس برمجيات</h2>
+          <h5 style="color:white;font-size: 20px;height:25px; text-align: center;" >صاحب تجربة واقعية وعمل فعلي</h5>
+          <p style="color:white;font-size: 19px; text-align: center;">أنا مطور تطبيقات ومواقع بخبرة عملية واسعة اكتسبتها من العمل الذاتي والمشاريع الواقعية. لم أتخرج من جامعة ، لكني بنيت نفسي من الصفر، وكرّست وقتي لتعلم التقنيات الحديثة، وتنفيذ مشاريع حقيقية مستخدمة من قِبل المستخدمين، ومتوفرة الآن على متجر Google Play.</p>
+           <div style="justify-content: center;display: grid;grid-template-columns: auto auto;grid-gap: 10px;width:100%;height:50px;margin: 10px 0px 10px 0px;">
+              <a href="https://play.google.com/store/apps/dev?id=8923189061028862719" class="img_size"> <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"alt="جوجل بلاي" class="img_size">
+              </a>
+              <a  onclick="showAlert()" class="img_size"> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"alt="آب ستور" class="img_size">
+             </a>
+          </div>
         </div>
+           
     </div>
 
-    <!-- Vision Section -->
-    <section id="vision" class="section-padding bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5" style="color: #eb1e49;">رؤيتنا</h2>
-            <p class="text-center">
-                أن نصبح الخيار الأول لخدمات التوصيل في المنطقة، عبر تقديم حلول مبتكرة وملائمة تُسهِّل على العملاء حياتهم اليومية
-            </p>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="section-padding">
-        <div class="container">
-            <h2 class="text-center mb-5" style="color: #eb1e49;">حول الشركة </h2>
-            <p class="text-center">
-                تأسست شركة فاست سمارت للتوصيل المحدودة (المعروفة تجاريًا باسم "توصيل") في اليمن عام 2020، بهدف أن تكون رائدة في تقديم حلول توصيل مبتكرة ومتميزة. منذ انطلاقها، حرصت الشركة على وضع معايير عالية تلبي احتياجات السوق المتزايدة من خلال خدمات توصيل احترافية وموثوقة، تربط بين المطاعم والعملاء بشكل سلس وسريع.
-            </p>
-        </div>
-    </section>
-
-    <!-- Values Section -->
-  <!-- Values Section -->
-<!-- Values Section -->
-<section id="values" class="section-padding bg-light">
-    <div class="container">
-        <h2 class="text-center mb-5" style="color: #eb1e49;">قيمنا الأساسية</h2>
-        <div id="valuesCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <!-- First Slide -->
-                <div class="carousel-item active">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-md-4">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-globe fa-3x mb-3" style="color: #eb1e49;"></i>
-                                    <h4 class="card-title" style="color: #eb1e49;">الشمولية</h4>
-                                    <p class="card-text">تقديم حلول توصيل تغطي مختلف احتياجات العملاء من المطاعم، المتاجر، والخدمات الأخرى</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-bullseye fa-3x mb-3" style="color: #eb1e49;"></i>
-                                    <h4 class="card-title" style="color: #eb1e49;">الدقة</h4>
-                                    <p class="card-text">الاهتمام بأدق التفاصيل لضمان وصول الطلبات بشكل آمن وسليم</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-tachometer-alt fa-3x mb-3" style="color: #eb1e49;"></i>
-                                    <h4 class="card-title" style="color: #eb1e49;">السرعة</h4>
-                                    <p class="card-text">تحقيق توصيل الطلبات في أقصر وقت ممكن دون المساس بجودة الخدمة</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="omage_center"  id="servise"><div class="img_center"><h2 class="center_h2">🚀 ماذا أستطيع أن أقدّم؟</h2></div></div>
+    <div class="carousel">
+        <div class="images" id="images">
+            <div class="image">
+              <div style="float: left;width: 30%;height: 280px;">
+                <div style="width:100%;height:95%;align-items: center;">
+                  <img src="/home/abrahim/cromaxweb/image/Picsart_25-02-14_15-32-40-403.png" class="img_size">
                 </div>
-                <!-- Second Slide -->
-                <div class="carousel-item">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-md-4">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-lightbulb fa-3x mb-3" style="color: #eb1e49;"></i>
-                                    <h4 class="card-title" style="color: #eb1e49;">الابتكار</h4>
-                                    <p class="card-text">مواكبة أحدث الأفكار والتقنيات في مجال التوصيل لتحسين الأداء وتطوير الخدمة</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-shield-alt fa-3x mb-3" style="color: #eb1e49;"></i>
-                                    <h4 class="card-title" style="color: #eb1e49;">الموثوقية</h4>
-                                    <p class="card-text">التزام بتقديم خدمات موثوقة تحظى رضا العملاء والشركاء</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <div style="float: left;width: 70%;height: 280px;">
+                <h2 class="card_h2" > تطوير الواجهة الأمامية</h2>
+                <h5 class="card_h2" >✅ تطوير الواجهة الأمامية (Front-End Development):</h5>
+                <p class="card_p">تصميم صفحات ويب جذابة وسريعة الاستجابة باستخدام HTML، CSS، JavaScript.</p>
+                <p class="card_p">استخدام أطر مثل Tailwind CSS وReact لبناء واجهات احترافية وعصرية.</p>
+                <p class="card_p">فهم متقدم لتجربة المستخدم (UX) وتصميم واجهة المستخدم (UI).</p>
+              </div>
             </div>
-            <!-- Carousel Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#valuesCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" style="background-color: #eb1e49; border-radius: 50%; padding: 20px;"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#valuesCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" style="background-color: #eb1e49; border-radius: 50%; padding: 20px;"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            <!-- Carousel Indicators -->
-            <div class="carousel-indicators" style="bottom: -50px;">
-                <button type="button" data-bs-target="#valuesCarousel" data-bs-slide-to="0" class="active" style="background-color: #eb1e49;"></button>
-                <button type="button" data-bs-target="#valuesCarousel" data-bs-slide-to="1" style="background-color: #eb1e49;"></button>
+            <div class="image">
+              <div style="float: left;width: 30%;height: 280px;">
+                <div style="width:100%;height:95%;align-items: center;">
+                  <img src="/home/abrahim/Videos/Picsart/Picsart_24-11-15_00-54-31-262.jpg" class="img_size">
+                </div>
+              </div>
+              <div style="float: left;width: 70%;height: 280px;">
+                <h2 class="card_h2" >تطوير الواجهة الخلفية</h2>
+                <h5 class="card_h2" >✅ تطوير الواجهة الخلفية (Back-End Development):</h5>
+                <p class="card_p">برمجة منطق الخوادم باستخدام Python وFastAPI.</p>
+                <p class="card_p">إدارة قواعد البيانات وربطها بالموقع أو التطبيق (PostgreSQL، SQLite).</p>
+                <p class="card_p">تأمين البيانات وبناء واجهات API متكاملة للتطبيقات.</p>
+              </div>
+            </div>
+            <div class="image">
+              <div style="float: left;width: 30%;height: 280px;">
+                <div style="width:100%;height:95%;align-items: center;">
+                  <img src="/home/abrahim/cromaxweb/image/Picsart_25-02-14_15-32-40-403.png" class="img_size">
+                </div>
+              </div>
+              <div style="float: left;width: 70%;height: 280px;">
+                <h2 class="card_h2" >✅ تطوير التطبيقات (App Development):</h2>
+                <h5 class="card_h2" >تصميم صور واجهات التطبيقات والمواقع بطريقة احترافية.</h5>
+                <p class="card_p">بناء تطبيقات أندرويد باستخدام Kivy/KivyMD وPython.</p>
+                <p class="card_p">استخدام الذكاء الاصطناعي (PyTorch) لمعالجة الصور والصوت داخل التطبيق.</p>
+                <p class="card_p">رفع التطبيقات على متجر Google Play وإدارتها.</p>
+              </div>
+            </div>
+            <div class="image">
+              <div style="float: left;width: 30%;height: 280px;">
+                <div style="width:100%;height:95%;align-items: center;">
+                  <img src="/home/abrahim/cromaxweb/image/Picsart_25-02-14_15-32-40-403.png" class="img_size">
+                </div>
+              </div>
+              <div style="float: left;width: 70%;height: 280px;">
+                <h2 class="card_h2" >ربط التطبيقات بالسحابة الإلكترونية</h2>
+                <h5 class="card_h2" >✅ ربط التطبيقات بالسحابة الإلكترونية (Cloud Integration):</h5>
+                <p class="card_p">ربط التطبيقات بالسيرفرات السحابية مثل AWS (EC2, S3, Lambda).</p>
+                <p class="card_p">رفع ومعالجة الصور/الصوت على السحابة وإرجاع النتائج للتطبيق بشكل مباشر.</p>
+                <p class="card_p">بناء أنظمة تلقائية لتحديث محتوى التطبيقات من السحابة دون تحديث APK.</p>
+              </div>
+            </div>
+            <div class="image">
+              <div style="float: left;width: 30%;height: 280px;">
+                <div style="width:100%;height:95%;align-items: center;">
+                  <img src="/home/abrahim/cromaxweb/image/Picsart_25-02-14_15-32-40-403.png" class="img_size">
+                </div>
+              </div>
+              <div style="float: left;width: 70%;height: 280px;">
+                <h2 class="card_h2" >تحسين محركات البحث</h2>
+                <h5 class="card_h2" >✅ تحسين محركات البحث (SEO):</h5>
+                <p class="card_p">فهرسة صفحات الويب بشكل سليم.</p>
+                <p class="card_p">تحسين ظهور المواقع في نتائج البحث.</p>
+                <p class="card_p">تحليل الكلمات المفتاحية واستخدام الأدوات الاحترافية.</p>
+              </div>
+            </div>
+            <div class="image">
+              <div style="float: left;width: 30%;height: 280px;">
+                <div style="width:100%;height:95%;align-items: center;">
+                  <img src="/home/abrahim/cromaxweb/image/Picsart_25-02-14_15-32-40-403.png" class="img_size">
+                </div>
+              </div>
+              <div style="float: left;width: 70%;height: 280px;">
+                <h2 class="card_h2" >✅ إدارة الحملات الإعلانية:</h2>
+                <h5 class="card_h2" >تخطيط وتنفيذ حملات Google Ads.</h5>
+                <p class="card_p">إعداد صور الحملات التسويقية الجذابة.</p>
+                <p class="card_p">تحليل النتائج وتحسينها للحصول على أفضل عائد على الاستثمار (ROI).</p>
+                <p class="card_p">جذب آلاف المستخدمين للتطبيقات من خلال الإعلانات المستهدفة.</p>
+              </div>
             </div>
         </div>
+        <button class="button left" onclick="moveLeft()">&#10094;</button>
+        <button class="button right" onclick="moveRight()">&#10095;</button>
     </div>
-</section>
-<!-- Testimonials Section -->
-<section id="testimonials" class="section-padding">
-    <div class="container">
-        <h2 class="text-center mb-5" style="color: #eb1e49;">آراء عملائنا</h2>
-        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="testimonial-card text-center">
-                                <div class="testimonial-img mb-4">
-                                    <i class="fas fa-user-circle fa-4x" style="color: #eb1e49;"></i>
-                                </div>
-                                <p class="testimonial-text mb-4">جمل وافضل برنامج توصيل ب اليمن وعن تجربه واشكركم على منحي تجربه رائعهم معكم وكمان ب الفوز معكم اتمنى لكم مزيداً من النجاح والتفوق والازدهار
-                                    والتطور والتوسع والانتشا"</p>
-                                <h5 class="testimonial-name" style="color: #eb1e49;">آمال محمد</h5>
-                                <p class="testimonial-position">عميل دائم</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="testimonial-card text-center">
-                                <div class="testimonial-img mb-4">
-                                    <i class="fas fa-user-circle fa-4x" style="color: #eb1e49;"></i>
-                                </div>
-                                <p class="testimonial-text mb-4">"أفضل خدمة توصيل جربتها! السرعة في التوصيل والاهتمام بالتفاصيل يجعلها الخيار الأول دائماً."</p>
-                                <h5 class="testimonial-name" style="color: #eb1e49;">سارة عبدالله</h5>
-                                <p class="testimonial-position">صاحبة متجر</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="testimonial-card text-center">
-                                <div class="testimonial-img mb-4">
-                                    <i class="fas fa-user-circle fa-4x" style="color: #eb1e49;"></i>
-                                </div>
-                                <p class="testimonial-text mb-4">"التطبيق رائع والخدمة ممتازة! أسعار معقولة وتوصيل سريع. أصبح خياري الأول للتوصيل."</p>
-                                <h5 class="testimonial-name" style="color: #eb1e49;">خالد العمري</h5>
-                                <p class="testimonial-position">صاحب مطعم</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="omage_center"  id="runapp"><div class="img_center"><h2 class="center_h2">📱 ماذا أنجزت فعليًا؟</h2></div></div>
+    <div style="padding: 20px;">
+      <div class="carousel">
+        <div class="images" id="images2">
+            <div class="image2">
+              <h1 class="card_h2" style="color: black;text-align: center;">python ai</h1>
+              <h2 class="card_h2" style="color: black;text-align: center;">هو تطبيق متكامل يدمج دردشة بالذكاء الاصطناعي، محرر نصوص متقدم، مولد صور باستخدام الذكاء الاصطناعي، محول صيغ الملفات، أدوات استخراج النصوص من الصور والملفات وتعديلها، ألعاب تفاعلية، ودورات تعليمية برمجية من الصفر إلى الاحتراف في بايثون، بهدف تلبية احتياجات المستخدمين في الترفيه، التعلم، والإنتاجية بشكل سهل وفعال</h2>
+              <a href="https://play.google.com/store/apps/details?id=org.information.information" style="float: left;width: 100%;height: 50px;"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="جوجل بلاي" class="img_size"></a>
             </div>
-            <!-- Carousel Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" style="background-color: #eb1e49; border-radius: 50%; padding: 20px;"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" style="background-color: #eb1e49; border-radius: 50%; padding: 20px;"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            <!-- Carousel Indicators -->
-            <div class="carousel-indicators" style="bottom: -50px;">
-                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" style="background-color: #eb1e49;"></button>
-                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" style="background-color: #eb1e49;"></button>
-                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" style="background-color: #eb1e49;"></button>
+            <div class="image2">
+              <h1 class="card_h2" style="color: black;text-align: center;">دروس الأمن السيبراني</h1>
+              <h2 class="card_h2" style="color: black;text-align: center;">تقدم هذه المنصة التعليمية تجربة فريدة ومتطورة في تعلم الأمن السيبراني، حيث تجمع بين محتوى دروس متخصصة، أدوات تفاعلية، وتقنيات الذكاء الاصطناعي لتوفير تعليم شخصي، تفاعلي، وفعّال. تم تصميم التطبيق ليكون مناسبًا للمبتدئين والمحترفين على حد سواء، مع تقديم مسار تعليمي متدرج يغطي أساسيات الأمن السيبراني، تقنيات الاختراق الأخلاقي، حماية البيانات، التشفير، والاستجابة للحوادث السيبرانية</h2>
+              <a href="https://play.google.com/store/apps/details?id=org.cybersecurity.abrahim711.org.cybersecurity.abrahim711" style="float: left;width: 100%;height: 50px;"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="جوجل بلاي" class="img_size"></a>
+            </div>
+            <div class="image2">
+              <h1 class="card_h2" style="color: black;text-align: center;">فحص الثغرات الأمنية</h1>
+              <h2 class="card_h2" style="color: black;text-align: center;">تقدم هذه المنصة أداة متكاملة ومتطورة لفحص الثغرات الأمنية في الأنظمة، الشبكات، وتطبيقات الويب، بهدف كشف النقاط الضعيفة وتعزيز مستوى الحماية السيبرانية للمؤسسات والأفراد. يعتمد التطبيق على أحدث التقنيات في مجال الأمن السيبراني، ويتميز بواجهة سهلة الاستخدام وميزات متقدمة تساعد الفرق التقنية على تحديد الثغرات بسرعة وبدقة عالية</h2>
+              <a onclick="showAlert()" style="float: left;width: 100%;height: 50px;"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="جوجل بلاي" class="img_size"></a>
+            </div>
+            <div class="image2">
+              <h1 class="card_h2" style="color: black;text-align: center;">محرر صور وصوت ذكي</h1>
+              <h2 class="card_h2" style="color: black;text-align: center;">يُعد هذا التطبيق منصة متقدمة تجمع بين تحرير الصور والصوت باستخدام تقنيات الذكاء الاصطناعي، ليقدم أدوات مبتكرة وسهلة الاستخدام تُمكّن المستخدمين من تعديل وتطوير محتواهم الإبداعي بسرعة ودقة عالية. سواء كنت مصورًا، منشئ محتوى، أو هاويًا، يوفر التطبيق أدوات متخصصة لتحسين الصور والأصوات، إضافة إلى إمكانيات تحويلية مذهلة تتيح للمستخدمين ابتكار محتوى فريد من نوعه.</h2>
+              <a  onclick="showAlert()" style="float: left;width: 100%;height: 50px;"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="جوجل بلاي" class="img_size"></a>
             </div>
         </div>
+        <div id="alertBox">
+          <div id="alertText">هذه الخدمات قيد التطوير لم يتم اطلاقها بعد</div>
+          <button id="closeAlert" onclick="hideAlert()">إغلاق</button>
+        </div>
+        <button class="button left" onclick="moveLeft()">&#10094;</button>
+        <button class="button right" onclick="moveRight()">&#10095;</button>
+      </div>
     </div>
-</section>
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/TawseelApps" class="text-white ms-3"><i class="fab fa-facebook fa-2x"></i></a>
-                        <a href="https://twitter.com/TawseelApps" class="text-white ms-3"><i class="fab fa-twitter fa-2x"></i></a>
-                        <a href="https://www.instagram.com/TawseelApps/" class="text-white ms-3"><i class="fab fa-instagram fa-2x"></i></a>
-                        <a href="https://www.linkedin.com/company/tawseel-apps/" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
-                    </div>
-                    <p class="mt-3">© 2025 شركة فاست اسمارت للتوصيل جميع الحقوق محفوظة</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div class="omage_center"><div class="img_center"><h2 class="center_h2">اراء المستخدمين</h2></div></div>
+    <div style="padding: 20px;"><div class="marquee-container" id="marqueeContainer"></div></div>
+    <div class="omage_center"><div class="img_center"><h2 class="center_h2">اتصل بنا</h2></div></div>
+    <form id="contactForm">
+      <label for="name">الاسم:</label>
+      <input type="text" id="name" name="name" required />
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <label for="email">البريد الإلكتروني:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">الرسالة:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button class="buttonsend" type="submit">إرسال</button>
+    </form>
+
+    <div id="status"></div>
+  </main>
+  <footer class="footer">
+    <p class="card_h2" style="text-align: center;">© 2025 جميع الحقوق محفوظة</p>
+  </footer>
 </body>
 </html>
