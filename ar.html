@@ -16,7 +16,7 @@
   <a href="#"style="width:55px;height:50px;"><img src="img/my.png" style="width:55px;height:50px;border-radius: 30px;"></a>
   <!-- روابط القائمة على الشاشة الكبيرة -->
   <ul>
-    <li><a href="/">الرئيسية</a></li>
+    <li><a href="#">الرئيسية</a></li>
     <li><a href="#aboutme">عنّا</a></li>
     <li><a href="#servise">الخدمات</a></li>
     <li><a href="#runapp">الانجازات</a></li>
@@ -45,17 +45,15 @@
         <div id="slide1" class="slideshow"></div>
         <div class="content">
           
-          <h2 style="font-size: 22px;height:15px; text-align: center;" > 🧑‍💻 مهندس برمجيات</h2>
-          <h5 style="color:white;font-size: 20px;height:25px; text-align: center;" >صاحب تجربة واقعية وعمل فعلي</h5>
-          <p style="color:white;font-size: 19px; text-align: center;">أنا مطور تطبيقات ومواقع بخبرة عملية واسعة اكتسبتها من العمل الذاتي والمشاريع الواقعية. لم أتخرج من جامعة ، لكني بنيت نفسي من الصفر، وكرّست وقتي لتعلم التقنيات الحديثة، وتنفيذ مشاريع حقيقية مستخدمة من قِبل المستخدمين، ومتوفرة الآن على متجر Google Play.</p>
+          <h2 style="color: black;font-size: 22px;text-align: center;" > 🧑‍💻 مهندس برمجيات</h2>
+          <p class="card_h2" style="text-align: center;">أنا مطوّر برمجيات متخصص في بناء حلول تقنية متقدمة ومتكاملة، أعمل بشغف على تحويل الأفكار إلى مشاريع رقمية واقعية وفعالة. أمتلك خبرة واسعة في تطوير المواقع والتطبيقات، وتصميم الأنظمة الذكية التي تعتمد على الذكاء الاصطناعي والحوسبة السحابية. أسعى دائمًا لتقديم تجربة مستخدم ممتازة، وكود نظيف قابل للتوسعة والصيانة، مع مواكبة أحدث التقنيات والممارسات في عالم البرمجة. أؤمن بأن البرمجة ليست مجرد كود، بل هي فن في تقديم الحلول، ودقة في التنفيذ، وابتكار في التفكير. عملت على مشاريع متنوعة تخدم أفرادًا وشركات، من نماذج أولية بسيطة إلى تطبيقات معقّدة متكاملة. أُتقن التعامل مع التحديات الفنية واللوجستية، وأعرف كيف أبدأ من الصفر وأبني شيئًا قويًا وفعّالًا من الداخل إلى الخارج.</p>
            <div style="justify-content: center;display: grid;grid-template-columns: auto auto;grid-gap: 10px;width:100%;height:50px;margin: 10px 0px 10px 0px;">
               <a href="https://play.google.com/store/apps/dev?id=8923189061028862719" class="img_size"> <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"alt="جوجل بلاي" class="img_size">
               </a>
               <a  onclick="showAlert()" class="img_size"> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"alt="آب ستور" class="img_size">
              </a>
           </div>
-        </div>
-           
+        </div>   
     </div>
 
 
@@ -183,34 +181,89 @@
         <button class="button right" onclick="moveRight()">&#10095;</button>
       </div>
     </div>
-    <div class="omage_center"><div class="img_center"><h2 class="center_h2">اراء المستخدمين</h2></div></div>
-    <div style="padding: 20px;"><div class="marquee-container" id="marqueeContainer"></div></div>
-    <div class="omage_center"><div class="img_center"><h2 class="center_h2">اتصل بنا</h2></div></div>
-    <form id="contactForm">
-      <label for="name">الاسم:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">البريد الإلكتروني:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">الرسالة:</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
-
-      <button class="buttonsend" type="submit">إرسال</button>
-    </form>
-    <div id="status"></div>
-    <div class="omage_center" id="aboutme"><div class="img_center"><h2 class="center_h2">معلومات عنا</h2></div></div>
-    <div class="aboutme">
-      <div><h1 class="card_h2" style="color: black;">: البريد الالكتروني</h1>
-      <a class="card_p" style="text-align: center;color: black;">abrahim71192@gmail.com</a>
-      </div>
-      <div><h1 class="card_h2" style="color: black;">: الهاتف</h1>
-      <a class="card_p" style="text-align: center;color: black;">+967775796741</a>
-      </div>
-      <div><h1 class="card_h2" style="color: black;">: الواتس اب</h1>
-      <a class="card_p" style="text-align: center;color: black;">+967711924474</a>
+    <div class="mysee">
+      <div class="omage_center"><div class="img_center"><h2 class="center_h2">💼 رؤيتي</h2></div></div>
+      <p style="text-align: center;color: black;font-size: 22px;"> أسعى لأن أكون شريكًا تقنيًا موثوقًا لكل من يطمح إلى تحويل فكرته أو مشروعه إلى منتج رقمي حقيقي وقابل للنمو. أركز على بناء برمجيات تعمل بكفاءة عالية، وتتكيّف مع احتياجات المستخدمين وسرعة تغيّر السوق.وكذالك أبني حلول تقنية تنفع الناس وتسهل حياتهم. أحاول دايمًا أقدّم شيء مختلف، فيه ذوق، وفيه قيمة فعلية. ما أشتغل على مشروع إلا وأنا مؤمن إنه ممكن يكون ناجح. </p>
+    </div>
+    <div>
+      <div class="omage_center"><div class="img_center"><h2 class="center_h2">🛠️ التقنيات اللي أعمل عليها:</h2></div></div>
+      <div class="myseework">
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Python3</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">JavaScript</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">HTML</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">CSS</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Kivy/KivyMD</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">React</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Flask</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">FastAPI</h2></div>
+        
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">PyTorch</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">OpenCV</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Whisper</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">SQLite</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">PostgreSQL</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">AWS S3</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Lambda</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">API Gateway</h2></div>
+        
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Web Apps</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">APK (Android)</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Tailwind CSS</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Azure</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">google ADS</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">facebook ADS</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">SEO</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Lambda</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">UX/UI</h2></div>
+        
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">github</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">wordprss</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">json</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">API</h2></div>
+        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">linux</h2></div>
       </div>
     </div>
+    <div class="mysee"style="margin-top: 20px;">
+      <div class="omage_center"><div class="img_center"><h2 class="center_h2">🔍 مبادئي في العمل</h2></div></div>
+      <h2 class="card_h2" style="color: black;">✅ الاحترافية: ألتزم بأعلى معايير الجودة في كل سطر برمجي</h2>
+      <h2 class="card_h2" style="color: black;">✅ المرونة: أتكيف مع متطلبات المشروع واحتياجات العميل</h2>
+      <h2 class="card_h2" style="color: black;">✅ الاستمرارية: لا أقدّم كودًا فقط، بل أبني أساسًا يمكن الاعتماد عليه والنمو فوقه</h2>
+      <h2 class="card_h2" style="color: black;">✅ الشفافية: أحرص على التواصل المستمر والوضوح في كل خطوة من مراحل التطوير</h2>
+    </div>
+    
+    <div style="padding: 20px;"><div class="omage_center"><div class="img_center"><h2 class="center_h2">اراء المستخدمين</h2></div></div><div class="marquee-container" id="marqueeContainer"></div></div>
+    
+    <div class="aboutmeone">
+      <div class="omage_center" id="aboutme"><div class="img_center"><h2 class="center_h2">👨‍💻 معلومات عنا</h2></div></div>
+      <p style="text-align: center;color: black;font-size: 22px;">أنا أقدّم قيمة حقيقية. أعمل على مشاريع كأنها مشاريعي الخاصة، وأعتبر نجاحها نجاحًا شخصيًا لي. لذلك، أحرص على التفاصيل الدقيقة، وسرعة الأداء، والموثوقية في التسليم.لو عندك فكرة، أو حتى لو ما تعرف من فين تبدأ، كلمني وخلينا نرسم طريق النجاح معًا خطوة خطوة.</p>
+      <div class="aboutme">
+        <div><h1 class="card_h2" style="color: black;">: البريد الالكتروني</h1>
+        <a class="card_p" href="mailto:abrahim71192@gmail.com" style="text-align: center;color: black;">abrahim71192@gmail.com</a>
+        </div>
+        <div><h1 class="card_h2" style="color: black;">: الهاتف</h1>
+        <a class="card_p" href="tel:+967775796741" style="text-align: center;color: black;">+967775796741</a>
+        </div>
+        <div><h1 class="card_h2" style="color: black;">: الواتس اب</h1>
+        <a class="card_p" href="https://wa.me/967711924474" style="text-align: center;color: black;">+967711924474</a>
+        </div>
+      </div>
+    </div>
+    <div class="message" id="responseMessage"></div>
+
+    <form id="contactForm" action="send_email.php" method="post" onsubmit="return validateForm()">
+        <div class="omage_center"><div class="img_center"><h2 class="center_h2">اتصل بنا</h2></div></div>
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">الرسالة:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="submit" value="إرسال">
+    </form>
+    
   </main>
   <footer class="footer">
     <p class="card_h2" style="text-align: center;">© 2025 جميع الحقوق محفوظة</p>
