@@ -340,4 +340,5 @@ body {
     max-width: 350px;
     }
     .carousel2{height: 400px;}
+    .aboutme{grid-template-columns: auto auto;}
   }
