@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧑‍💻 مهندس برمجيات</title>
+  <link rel="stylesheet" href="style.css">
+  <script async defer src="script.js" type="text/javascript"></script>
+  
+</head>
+<body>
+
+<!-- قائمة التنقل -->
+<header>
+<nav>
+  <a href="#"style="width:55px;height:50px;"><img src="img/my.png" style="width:55px;height:50px;border-radius: 30px;"></a>
+  <!-- روابط القائمة على الشاشة الكبيرة -->
+  <ul>
+    <li><a href="/">الرئيسية</a></li>
+    <li><a href="#aboutme">عنّا</a></li>
+    <li><a href="#servise">الخدمات</a></li>
+    <li><a href="#runapp">الانجازات</a></li>
+    <li><a href="#contactForm">اتصل بنا</a></li>
+  </ul>
+  <a href="index.html" style="color:white;font-size: 22px;height:15px; text-align: center;" >English</a>
+  <!-- زر الفتح على الهاتف -->
+  <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+</nav>
+
+<!-- القائمة الجانبية -->
+<div id="sideMenu" class="side-menu">
+  <div style="height:50px;display: flex;justify-content: left;"><a href="#"style="width:55px;height:50px;"><img src="img/Picsart_25-05-31_19-23-31-314.png" style="width:55px;height:50px;" onclick="toggleMenu()"></a></div>
+  <div style="margin-top: 30px;position: fixed;padding-left:20px;">
+    <a href="#" class="side-menu-a" onclick="toggleMenu()">الرئيسية</a>
+    <a href="#aboutme" class="side-menu-a" onclick="toggleMenu()">عنّا</a>
+    <a href="#servise" class="side-menu-a" onclick="toggleMenu()">الخدمات</a>
+    <a href="#runapp" class="side-menu-a" onclick="toggleMenu()">الانجازات</a>
+    <a href="#contactForm" class="side-menu-a" onclick="toggleMenu()">اتصل بنا</a>
+  </div>
+</div>
+</header>
+  <main>
+    <!-- Hero Section with Slider -->
+    <div class="hero-slider">
+        <div id="slide1" class="slideshow"></div>
+        <div class="content">
+          
+          <h2 style="font-size: 22px;height:15px; text-align: center;" > 🧑‍💻 مهندس برمجيات</h2>
+          <h5 style="color:white;font-size: 20px;height:25px; text-align: center;" >صاحب تجربة واقعية وعمل فعلي</h5>
+          <p style="color:white;font-size: 19px; text-align: center;">أنا مطور تطبيقات ومواقع بخبرة عملية واسعة اكتسبتها من العمل الذاتي والمشاريع الواقعية. لم أتخرج من جامعة ، لكني بنيت نفسي من الصفر، وكرّست وقتي لتعلم التقنيات الحديثة، وتنفيذ مشاريع حقيقية مستخدمة من قِبل المستخدمين، ومتوفرة الآن على متجر Google Play.</p>
+           <div style="justify-content: center;display: grid;grid-template-columns: auto auto;grid-gap: 10px;width:100%;height:50px;margin: 10px 0px 10px 0px;">
+              <a href="https://play.google.com/store/apps/dev?id=8923189061028862719" class="img_size"> <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"alt="جوجل بلاي" class="img_size">
+              </a>
+              <a  onclick="showAlert()" class="img_size"> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"alt="آب ستور" class="img_size">
+             </a>
+          </div>
+        </div>
+           
+    </div>
+
+
+    <div class="omage_center"  id="servise"><div class="img_center"><h2 class="center_h2">🚀 ماذا أستطيع أن أقدّم؟</h2></div></div>
+    <div class="carousel">
+        <div class="images" id="images">
+            <div class="image">
+              <div style="float: left;width: 30%;height: 280px;">
+                <div style="width:100%;height:95%;align-items: center;">
+                  <img src="/home/abrahim/cromaxweb/image/Picsart_25-02-14_15-32-40-403.png" class="img_size">
+                </div>
+              </div>
+              <div style="float: left;width: 70%;height: 280px;">
+                <h2 class="card_h2" > تطوير الواجهة الأمامية</h2>
+                <h5 class="card_h2" >✅ تطوير الواجهة الأمامية (Front-End Development):</h5>
+                <p class="card_p">تصميم صفحات ويب جذابة وسريعة الاستجابة باستخدام HTML، CSS، JavaScript.</p>
+                <p class="card_p">استخدام أطر مثل Tailwind CSS وReact لبناء واجهات احترافية وعصرية.</p>
+                <p class="card_p">فهم متقدم لتجربة المستخدم (UX) وتصميم واجهة المستخدم (UI).</p>
+              </div>
+            </div>
+            <div class="image">
+              <div style="float: left;width: 30%;height: 280px;">
+                <div style="width:100%;height:95%;align-items: center;">
+                  <img src="/home/abrahim/Videos/Picsart/Picsart_24-11-15_00-54-31-262.jpg" class="img_size">
+                </div>
+              </div>
+              <div style="float: left;width: 70%;height: 280px;">
+                <h2 class="card_h2" >تطوير الواجهة الخلفية</h2>
+                <h5 class="card_h2" >✅ تطوير الواجهة الخلفية (Back-End Development):</h5>
+                <p class="card_p">برمجة منطق الخوادم باستخدام Python وFastAPI.</p>
+                <p class="card_p">إدارة قواعد البيانات وربطها بالموقع أو التطبيق (PostgreSQL، SQLite).</p>
+                <p class="card_p">تأمين البيانات وبناء واجهات API متكاملة للتطبيقات.</p>
+              </div>
+            </div>
+            <div class="image">
+              <div style="float: left;width: 30%;height: 280px;">
+                <div style="width:100%;height:95%;align-items: center;">
+                  <img src="/home/abrahim/cromaxweb/image/Picsart_25-02-14_15-32-40-403.png" class="img_size">
+                </div>
+              </div>
+              <div style="float: left;width: 70%;height: 280px;">
+                <h2 class="card_h2" >✅ تطوير التطبيقات (App Development):</h2>
+                <h5 class="card_h2" >تصميم صور واجهات التطبيقات والمواقع بطريقة احترافية.</h5>
+                <p class="card_p">بناء تطبيقات أندرويد باستخدام Kivy/KivyMD وPython.</p>
+                <p class="card_p">استخدام الذكاء الاصطناعي (PyTorch) لمعالجة الصور والصوت داخل التطبيق.</p>
+                <p class="card_p">رفع التطبيقات على متجر Google Play وإدارتها.</p>
+              </div>
+            </div>
+            <div class="image">
+              <div style="float: left;width: 30%;height: 280px;">
+                <div style="width:100%;height:95%;align-items: center;">
+                  <img src="/home/abrahim/cromaxweb/image/Picsart_25-02-14_15-32-40-403.png" class="img_size">
+                </div>
+              </div>
+              <div style="float: left;width: 70%;height: 280px;">
+                <h2 class="card_h2" >ربط التطبيقات بالسحابة الإلكترونية</h2>
+                <h5 class="card_h2" >✅ ربط التطبيقات بالسحابة الإلكترونية (Cloud Integration):</h5>
+                <p class="card_p">ربط التطبيقات بالسيرفرات السحابية مثل AWS (EC2, S3, Lambda).</p>
+                <p class="card_p">رفع ومعالجة الصور/الصوت على السحابة وإرجاع النتائج للتطبيق بشكل مباشر.</p>
+                <p class="card_p">بناء أنظمة تلقائية لتحديث محتوى التطبيقات من السحابة دون تحديث APK.</p>
+              </div>
+            </div>
+            <div class="image">
+              <div style="float: left;width: 30%;height: 280px;">
+                <div style="width:100%;height:95%;align-items: center;">
+                  <img src="/home/abrahim/cromaxweb/image/Picsart_25-02-14_15-32-40-403.png" class="img_size">
+                </div>
+              </div>
+              <div style="float: left;width: 70%;height: 280px;">
+                <h2 class="card_h2" >تحسين محركات البحث</h2>
+                <h5 class="card_h2" >✅ تحسين محركات البحث (SEO):</h5>
+                <p class="card_p">فهرسة صفحات الويب بشكل سليم.</p>
+                <p class="card_p">تحسين ظهور المواقع في نتائج البحث.</p>
+                <p class="card_p">تحليل الكلمات المفتاحية واستخدام الأدوات الاحترافية.</p>
+              </div>
+            </div>
+            <div class="image">
+              <div style="float: left;width: 30%;height: 280px;">
+                <div style="width:100%;height:95%;align-items: center;">
+                  <img src="/home/abrahim/cromaxweb/image/Picsart_25-02-14_15-32-40-403.png" class="img_size">
+                </div>
+              </div>
+              <div style="float: left;width: 70%;height: 280px;">
+                <h2 class="card_h2" >✅ إدارة الحملات الإعلانية:</h2>
+                <h5 class="card_h2" >تخطيط وتنفيذ حملات Google Ads.</h5>
+                <p class="card_p">إعداد صور الحملات التسويقية الجذابة.</p>
+                <p class="card_p">تحليل النتائج وتحسينها للحصول على أفضل عائد على الاستثمار (ROI).</p>
+                <p class="card_p">جذب آلاف المستخدمين للتطبيقات من خلال الإعلانات المستهدفة.</p>
+              </div>
+            </div>
+        </div>
+        <button class="button left" onclick="moveLeft()">&#10094;</button>
+        <button class="button right" onclick="moveRight()">&#10095;</button>
+    </div>
+    <div class="omage_center"  id="runapp"><div class="img_center"><h2 class="center_h2">📱 ماذا أنجزت فعليًا؟</h2></div></div>
+    <div style="padding: 20px;">
+      <div class="carousel2">
+        <div class="images" id="images2">
+            <div class="image2">
+              <h1 class="card_h2" style="color: black;text-align: center;">python ai</h1>
+              <h2 class="card_h2" style="color: black;text-align: center;">هو تطبيق متكامل يدمج دردشة بالذكاء الاصطناعي، محرر نصوص متقدم، مولد صور باستخدام الذكاء الاصطناعي، محول صيغ الملفات، أدوات استخراج النصوص من الصور والملفات وتعديلها، ألعاب تفاعلية، ودورات تعليمية برمجية من الصفر إلى الاحتراف في بايثون، بهدف تلبية احتياجات المستخدمين في الترفيه، التعلم، والإنتاجية بشكل سهل وفعال</h2>
+              <a href="https://play.google.com/store/apps/details?id=org.information.information" style="float: left;width: 100%;height: 50px;"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="جوجل بلاي" class="img_size"></a>
+            </div>
+            <div class="image2">
+              <h1 class="card_h2" style="color: black;text-align: center;">دروس الأمن السيبراني</h1>
+              <h2 class="card_h2" style="color: black;text-align: center;">تقدم هذه المنصة التعليمية تجربة فريدة ومتطورة في تعلم الأمن السيبراني، حيث تجمع بين محتوى دروس متخصصة، أدوات تفاعلية، وتقنيات الذكاء الاصطناعي لتوفير تعليم شخصي، تفاعلي، وفعّال. تم تصميم التطبيق ليكون مناسبًا للمبتدئين والمحترفين على حد سواء، مع تقديم مسار تعليمي متدرج يغطي أساسيات الأمن السيبراني، تقنيات الاختراق الأخلاقي، حماية البيانات، التشفير، والاستجابة للحوادث السيبرانية</h2>
+              <a href="https://play.google.com/store/apps/details?id=org.cybersecurity.abrahim711.org.cybersecurity.abrahim711" style="float: left;width: 100%;height: 50px;"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="جوجل بلاي" class="img_size"></a>
+            </div>
+            <div class="image2">
+              <h1 class="card_h2" style="color: black;text-align: center;">فحص الثغرات الأمنية</h1>
+              <h2 class="card_h2" style="color: black;text-align: center;">تقدم هذه المنصة أداة متكاملة ومتطورة لفحص الثغرات الأمنية في الأنظمة، الشبكات، وتطبيقات الويب، بهدف كشف النقاط الضعيفة وتعزيز مستوى الحماية السيبرانية للمؤسسات والأفراد. يعتمد التطبيق على أحدث التقنيات في مجال الأمن السيبراني، ويتميز بواجهة سهلة الاستخدام وميزات متقدمة تساعد الفرق التقنية على تحديد الثغرات بسرعة وبدقة عالية</h2>
+              <a onclick="showAlert()" style="float: left;width: 100%;height: 50px;"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="جوجل بلاي" class="img_size"></a>
+            </div>
+            <div class="image2">
+              <h1 class="card_h2" style="color: black;text-align: center;">محرر صور وصوت ذكي</h1>
+              <h2 class="card_h2" style="color: black;text-align: center;">يُعد هذا التطبيق منصة متقدمة تجمع بين تحرير الصور والصوت باستخدام تقنيات الذكاء الاصطناعي، ليقدم أدوات مبتكرة وسهلة الاستخدام تُمكّن المستخدمين من تعديل وتطوير محتواهم الإبداعي بسرعة ودقة عالية. سواء كنت مصورًا، منشئ محتوى، أو هاويًا، يوفر التطبيق أدوات متخصصة لتحسين الصور والأصوات، إضافة إلى إمكانيات تحويلية مذهلة تتيح للمستخدمين ابتكار محتوى فريد من نوعه.</h2>
+              <a  onclick="showAlert()" style="float: left;width: 100%;height: 50px;"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="جوجل بلاي" class="img_size"></a>
+            </div>
+        </div>
+        <div id="alertBox">
+          <div id="alertText">هذه الخدمات قيد التطوير لم يتم اطلاقها بعد</div>
+          <button id="closeAlert" onclick="hideAlert()">إغلاق</button>
+        </div>
+        <button class="button left" onclick="moveLeft()">&#10094;</button>
+        <button class="button right" onclick="moveRight()">&#10095;</button>
+      </div>
+    </div>
+    <div class="omage_center"><div class="img_center"><h2 class="center_h2">اراء المستخدمين</h2></div></div>
+    <div style="padding: 20px;"><div class="marquee-container" id="marqueeContainer"></div></div>
+    <div class="omage_center"><div class="img_center"><h2 class="center_h2">اتصل بنا</h2></div></div>
+    <form id="contactForm">
+      <label for="name">الاسم:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">البريد الإلكتروني:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">الرسالة:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button class="buttonsend" type="submit">إرسال</button>
+    </form>
+    <div id="status"></div>
+    <div class="omage_center" id="aboutme"><div class="img_center"><h2 class="center_h2">معلومات عنا</h2></div></div>
+    <div class="aboutme">
+      <div><h1 class="card_h2" style="color: black;">: البريد الالكتروني</h1>
+      <a class="card_p" style="text-align: center;color: black;">abrahim71192@gmail.com</a>
+      </div>
+      <div><h1 class="card_h2" style="color: black;">: الهاتف</h1>
+      <a class="card_p" style="text-align: center;color: black;">+967775796741</a>
+      </div>
+      <div><h1 class="card_h2" style="color: black;">: الواتس اب</h1>
+      <a class="card_p" style="text-align: center;color: black;">+967711924474</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="card_h2" style="text-align: center;">© 2025 جميع الحقوق محفوظة</p>
+  </footer>
+
+</body>
+</html>
