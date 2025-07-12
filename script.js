@@ -1,4 +1,18 @@
+function validateForm() {
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const responseDiv = document.getElementById('responseMessage');
 
+        if (!name || !email || !message) {
+            responseDiv.style.display = 'block';
+            responseDiv.className = 'message error';
+            responseDiv.innerText = 'يرجى ملء جميع الحقول.';
+            return false;
+        }
+        // يمكنك إضافة تحقق من صحة البريد الإلكتروني هنا إذا رغبت
+        return true;
+    }
   // قائمة النصوص مع سرعات مختلفة (بالثواني)
   const texts = [
     { content: 'تطبيق فريد بكل ما تحمله الكلمة من معنى جعل من المستحيل ممكن شكرا على جهودكم التي لا تقدر بثمن', speed: 20 },
