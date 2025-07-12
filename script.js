@@ -1,20 +1,4 @@
-  // تهيئة EmailJS باستخدام معرف الخدمة و القالب
-  emailjs.init('YOUR_PUBLIC_KEY'); // استبدلها بمفتاحك العام من EmailJS
 
-  // التعامل مع إرسال النموذج
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    // إرسال النموذج عبر EmailJS
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
-      .then(function() {
-        document.getElementById('status').innerHTML = 'تم إرسال رسالتك بنجاح!';
-        document.getElementById('contactForm').reset();
-      }, function(error) {
-        document.getElementById('status').innerHTML = 'حدث خطأ أثناء الإرسال. حاول مرة أخرى.';
-        console.log('فشل الإرسال:', error);
-      });
-  });
   // قائمة النصوص مع سرعات مختلفة (بالثواني)
   const texts = [
     { content: 'تطبيق فريد بكل ما تحمله الكلمة من معنى جعل من المستحيل ممكن شكرا على جهودكم التي لا تقدر بثمن', speed: 20 },
@@ -43,6 +27,7 @@
   function hideAlert() {
     document.getElementById('alertBox').style.display = 'none';
   }
+
 let index = 0;
 let index2 = 0;
 const images2 = document.getElementById('images');
@@ -69,8 +54,9 @@ function updateCarousel() {
 setInterval(moveRight, 4000); // Auto move every 3 seconds
 
   const images = [
-    '/home/abrahim/cromaxweb/image/Picsart_25-06-16_13-43-58-619.png',
-    '/home/abrahim/cromaxweb/image/Picsart_25-06-16_13-47-12-029.png'
+    'img/Picsart_25-07-12_12-20-11-642.png',
+    'img/Picsart_25-02-08_01-20-48-696.png',
+    'img/Picsart_25-07-12_12-19-52-540.png'
   ];
 
   const slideshow = document.getElementById('slide1');
