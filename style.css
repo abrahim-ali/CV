@@ -88,13 +88,13 @@ body {
   }
 .carousel {
     display: flex;
-    height: 340px;
+    height: 350px;
     overflow: hidden;
     position: relative;
 }
 .carousel2 {
     display: flex;
-    height: 300px;
+    height: 330px;
     overflow: hidden;
     position: relative;
 }
@@ -338,6 +338,6 @@ body {
     form {
     max-width: 350px;
     }
-    .carousel2{height: 400px;}
+    .carousel2{height: 430px;}
     .aboutme{grid-template-columns: auto auto;}
   }
