@@ -4,12 +4,12 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #333;
+  background-color: black;
 }
 
   /* قائمة التنقل العلوية */
   nav {
-    background-image: url('/home/abrahim/cromaxweb/image/Picsart_25-01-24_21-13-07-576.png');
+    background-image: url('img/Picsart_25-01-24_21-13-07-576.png');
     background-size: 100% 100%;
     display: flex;
     height:60px;
@@ -39,7 +39,7 @@ body {
     text-decoration: none;
   }
   nav ul li a:hover {
-    background-image: url('/home/abrahim/cromaxweb/image/Picsart_25-03-02_17-10-15-609.png');
+    background-image: url('img/Picsart_25-03-02_17-10-15-609.png');
     background-size: 100% 100%;
     color: white;
   }
@@ -61,7 +61,7 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    background-image: url('/home/abrahim/cromaxweb/image/Picsart_25-05-31_20-11-07-637.png');
+    background-image: url('img/Picsart_25-05-31_20-11-07-637.png');
     background-size: 100% 100%;
     overflow-x: hidden;
     transition: 0.3s;
@@ -76,7 +76,7 @@ body {
     color: white;
     width: 200px;
     text-align: center;
-    background-image: url('/home/abrahim/Videos/Picsart/Picsart_25-03-10_03-30-26-966.png');
+    background-image: url('img/Picsart_25-03-10_03-30-26-966.png');
     background-size: 100% 100%;
     text-decoration: none;
     margin: 10px 0px 0px 0px;
@@ -88,6 +88,12 @@ body {
   }
 .carousel {
     display: flex;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+}
+.carousel2 {
+    display: flex;
     height: 300px;
     overflow: hidden;
     position: relative;
@@ -97,10 +103,23 @@ body {
     transition: transform 0.5s ease;
     width: 100%; /* calc(100% * 5) Adjust based on number of images */
 }
+.aboutme{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 5px 20px 5px 20px;
+    padding: 0px 40px 10px 40px;
+    background-image: url('img/Picsart_25-03-05_14-24-33-515.png');
+    background-size: 100% 100%;
+}
 .image {
     min-width: 100%;
     width: 100%;
-    background-image: url('/home/abrahim/Videos/Picsart/Picsart_25-01-13_11-41-14-275.png');
+    background-image: url('img/Picsart_25-01-13_11-41-14-275.png');
     background-size: 100% 100%;
     padding: 15px 20px 10px 20px;
 }
@@ -108,7 +127,6 @@ body {
     min-width: 100%;
     width: 100%;
     border-radius: 30px;
-    height: 300px;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 15px 20px 10px 40px;
 }
@@ -136,7 +154,7 @@ body {
 }
 
 .img_center{
-  background-image: url('amags/Picsart_25-03-02_15-28-03-003.png');background-size: 100% 100%;width:250px;height:50px;
+  background-image: url('img/Picsart_25-02-03_22-05-28-749.png');background-size: 100% 100%;width:250px;height:50px;
 }
 .center_h2{
   color:white;font-size: 22px;height:10px;text-decoration-line: underline;display: flex;justify-content: center;
@@ -154,7 +172,7 @@ body {
     margin-top: 10px;
 }
 .footer {
-  background-image: url('/home/abrahim/cromaxweb/image/Picsart_25-06-16_13-32-51-368.jpg');
+  background-image: url('img/Picsart_25-01-24_21-11-45-414.jpg');
   background-size: 100% 100%;
   padding-top: 10px;
   height: 80px;
@@ -265,14 +283,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    pointer-events: none; /* لمنع التداخل مع النص */
   }
   
   /* حاوية النصوص */
   .marquee-container {
     width: 100%;
     overflow: hidden;
-    background-image: url('/home/abrahim/Videos/Picsart/Picsart_25-01-20_14-19-15-669.png');
+    background-image: url('img/Picsart_25-01-14_16-21-24-841.png');
     background-size: 100% 100%;
     padding: 10px 0;
   }
@@ -321,5 +338,6 @@ body {
     .image {padding: 15px 20px 10px 20px;}
     form {
     max-width: 350px;
-  }
+    }
+    .carousel2{height: 400px;}
   }
