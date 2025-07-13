@@ -367,5 +367,5 @@ body {
     .image {padding: 15px 20px 10px 20px;}
     .carousel2{height: 450px;}
     .aboutme{grid-template-columns: auto auto;}
-    .myseework {grid-template-columns: auto auto auto;}
+    .myseework {grid-template-columns: auto auto auto;padding: 1px 7px;}
   }
