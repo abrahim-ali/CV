@@ -2,272 +2,1372 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🧑‍💻 مهندس برمجيات</title>
-  <link rel="stylesheet" href="style.css">
-  <script async defer src="script.js" type="text/javascript"></script>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css " />
+  <meta name="google-site-verification" content="IZ1TksytMA4-MnWocCkNH8VTtm2b5UhTPuGFw8aWHA0" />
+  <!-- Meta Description -->
+  <meta name="description" content="Professional software engineer specializing in web development, application architecture, and modern tech solutions. Contact me for custom websites, scalable apps, and technical consulting.">
+
+  <!-- Keywords -->
+  <meta name="keywords" content="ibrahim ali ,software engineer, web developer, full stack developer, website design, web app, programming services, JavaScript, React, Node.js, PHP, Laravel, HTML, CSS, SEO, freelance developer,HTML & CSS,UX/UI,Node.js,FastAPI">
+
+  <!-- Author -->
+  <meta name="author" content="ibrahim ali">
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="ibrahim ali - Software Engineer | Web Development & Tech Solutions">
+  <meta property="og:description" content="Professional software engineer specializing in web development, application architecture, and modern tech solutions. Contact me for custom websites, scalable apps, and technical consulting.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abrahim-ali.github.io/CV/">
+  <meta property="og:image" content="img/my.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ibrahim ali - Software Engineer | Web Development & Tech Solutions">
+  <meta name="twitter:description" content="Professional software engineer specializing in web development, application architecture, and modern tech solutions. Contact me for custom websites, scalable apps, and technical consulting.">
+  <meta name="twitter:image" content="img/my.png">
+  <meta name="twitter:site" content="@Software_hackr">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/my.png">
+
+  <!-- Structured Data (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org ",
+    "@type": "Person",
+    "name": "ibrahim ali",
+    "url": "https://abrahim-ali.github.io/CV/",
+    "sameAs": [
+      "https://facebook.com/software.engineer.711",
+      "https://github.com/abrahim-ali/",
+      "https://instagram.com/software_engineer711",
+      "https://twitter.com/@Software_hackr"
+    ],
+    "jobTitle": "Software Engineer",
+    "description": "Full-stack web developer and software engineer with expertise in building high-performance websites and scalable applications using modern technologies."
+  }
+  </script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Top Navigation Bar */
+    .top-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      padding: 15px 30px;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      background: linear-gradient(to right, #ff4ecd, #6c63ff);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .desktop-menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .desktop-menu a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      background: linear-gradient(to right, #6c63ff22, #ff4ecd22);
+    }
+
+    .desktop-menu a:hover {
+      background: linear-gradient(to right, #6c63ff66, #ff4ecd66);
+      transform: scale(1.05);
+    }
+
+    /* Mobile Menu Toggle */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      width: 30px;
+      height: 4px;
+      background: #fff;
+      border-radius: 2px;
+    }
+
+    /* Sidebar for Mobile */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      background: rgba(25, 25, 40, 0.95);
+      backdrop-filter: blur(10px);
+      padding-top: 70px;
+      z-index: 999;
+      transition: left 0.4s ease;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .sidebar.active {
+      left: 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 20px;
+    }
+
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+
+    .sidebar ul li a {
+      display: block;
+      padding: 12px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(90deg, #6c63ff, #ff4ecd);
+      text-align: center;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar ul li a:hover {
+      background: linear-gradient(90deg, #ff4ecd, #6c63ff);
+      transform: scale(1.05);
+    }
+
+    /* Main Content */
+    .main-content {
+      margin-top: 60px;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      height: 400px;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #6c63ff; }
+      to { text-shadow: 0 0 20px #ff4ecd; }
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0px 20px;
+    }
+    .card {
+      margin: 20px;
+      padding: 10px 30px;
+      background:linear-gradient(135deg, #6c63ff44, black);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      width: 100%;
+      
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px #6c63ff44;
+      animation: float 3s ease-in-out infinite;
+    }
+    .card2 {
+      margin: 20px;
+      display: flex;
+      padding: 5px;
+      background: #6c63ff44;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      width: 100%;
+      height: 400px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px #6c63ff44;
+    }
+    .canvas-home {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    .center-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: linear-gradient(to right, white, yellow);
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: glow 3s infinite alternate;
+      z-index: 2;
+      transform: translate(-50%, -50%);
+    }
+    .hero-container {
+      position: relative;
+      width: 90%;
+      max-width: 300px;
+      padding: 10px 30px;
+      margin: 10px 0px;
+      text-align: center;
+      border-radius: 20px;
+      z-index: 2;
+      overflow: hidden;
+      height: 50px;
+      background: transparent;
+    }
+
+    /* الخلفية المتحركة */
+    .moving-bg {
+      position: absolute;
+      top: 0;;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg,
+        rgba(60, 100, 180, 0.5) 0%,
+        rgba(80, 120, 180, 0.5) 20%,
+        rgba(100, 150, 190, 0.5) 40%,
+        rgba(120, 180, 200, 0.5) 60%,
+        rgba(100, 150, 190, 0.5) 80%,
+        rgba(80, 120, 180, 0.5) 100%);
+      background-size: 33.33% 100%;
+      z-index: -1;
+    }
+    .container {
+      width: 100%;
+      height: 400px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 1s ease-in-out;
+    }
+
+    .active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* الخلفيات الجذابة */
+    .section1 { background: linear-gradient(135deg, rgba(60, 100, 180, 0.5), black);border: 1px solid rgba(255, 255, 255, 0.1);border-radius: 15px;backdrop-filter: blur(10px);box-shadow: 0 0 20px #6c63ff44;}
+    .section2 { background: linear-gradient(135deg, #4e54c8, black);border: 1px solid rgba(255, 255, 255, 0.1);border-radius: 15px;backdrop-filter: blur(10px);box-shadow: 0 0 20px #6c63ff44; }
+    .section3 { background: linear-gradient(135deg, black, rgba(100, 170, 220, 0.5));border: 1px solid rgba(255, 255, 255, 0.1);border-radius: 15px;backdrop-filter: blur(10px);box-shadow: 0 0 20px #6c63ff44; }
+    .section4 { background: linear-gradient(135deg, rgba(80, 120, 180, 0.5), black);border: 1px solid rgba(255, 255, 255, 0.1);border-radius: 15px;backdrop-filter: blur(10px);box-shadow: 0 0 20px #6c63ff44; }
+    .section5 { background: linear-gradient(135deg, black, rgba(80, 120, 180, 0.5));border: 1px solid rgba(255, 255, 255, 0.1);border-radius: 15px;backdrop-filter: blur(10px);box-shadow: 0 0 20px #6c63ff44; }
+
+    /* الأزرار الجانبية */
+    .nav-button {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 100;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      backdrop-filter: blur(5px);
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    #prev {
+      left: 2px;
+    }
+
+    #next {
+      right: 2px;
+    }
+
+    /* المؤشر الدائري */
+    .dots {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 100;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.3);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background-color: white;
+      width: 14px;
+      height: 14px;
+    }
+    .card_h2{
+      font-size: 2.5rem;
+      background: linear-gradient(to right, white, yellow);
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: glow 3s infinite alternate;
+    }
+    .card_p{
+      color:white;font-size: 16px;text-align: left;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .content-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin: 10px;
+      width: 100%;
+      padding: 40px;
+      animation: fadeInUp 1s ease-out forwards;
+      background: linear-gradient(135deg, black, rgba(60, 100, 180, 0.5));
+      border: 1px solid rgba(255, 255, 255, 0.1);border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px #6c63ff44;
+    }
+
+    .text-section {
+      flex: 1;
+      animation: slideInLeft 1s ease-out forwards;
+    }
+
+    .ABOTh2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 15px;
+    }
+
+    .ABOTh2::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      height: 90%;
+      width: 4px;
+      background: linear-gradient(to bottom, #ff6ec4, #7873f5);
+      border-radius: 2px;
+    }
+
+    .ABOTp {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #ddd;
+    }
+
+    .image-section {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      animation: slideInRight 1s ease-out forwards;
+    }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 15px;
+    }
+
+    /* تأثير التلاشي (Gradient Overlay) */
+    .fade-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.3) 70%);
+      z-index: 2;
+    }
+
+    /* تأثيرات الدخول */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    .services-section {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .servicesh2 {
+      font-size: 2.3rem;
+      margin-bottom: 25px;
+      position: relative;
+      display: inline-block;
+      animation: fadeInDown 1s ease-out forwards;
+    }
+
+    .servicesh2::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -15px;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(to right, #ff6ec4, #7873f5);
+    }
+
+    .services-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      width: 100%;
+      grid-gap: 10px;
+    }
+
+    .service-card {
+      background: linear-gradient(135deg,#0f0f0f , black);
+      border: 1px solid white;border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px green;
+      padding: 20px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      position: relative;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(30px);
+      will-change: transform, opacity;
+    }
+
+    .service-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .service-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .service-icon {
+      font-size: 3.2rem;
+      margin-bottom: 20px;
+      color: #7873f5;
+      transition: transform 0.3s ease, color 0.3s ease;
+      position: relative;
+      z-index: 2;
+    }
+
+    .service-card:hover .service-icon {
+      transform: rotate(12deg) scale(1.1);
+      color: #ff6ec4;
+    }
+
+    .service-title {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+      position: relative;
+      z-index: 2;
+    }
+
+    .service-desc {
+      font-size: 0.95rem;
+      color: #ccc;
+      position: relative;
+      z-index: 2;
+    }
+
+    .service-card:hover::before {
+      transform: rotate(360deg);
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .category-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .tab-btn {
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+      border: none;
+      color: #fff;
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(to right, #ff6ec4, #7873f5);
+      color: #111;
+      font-weight: bold;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .skill-card {
+      background: linear-gradient(135deg,blue , black);
+      border: 1px solid white;border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px green;
+      border-radius: 12px;
+      padding: 15px 20px;
+      text-align: center;
+      transition: transform 0.3s ease, background 0.3s ease;
+      cursor: default;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .skill-icon {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #7873f5;
+    }
+
+    .skill-name {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .contact-card {
+      background: #0f2027;
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px #203a43;
+      border: 1px solid gray;
+      margin: 10px;
+      width: 100%;
+      padding: 40px;
+      text-align: center;
+      animation: fadeInUp 1s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .contact-title {
+      font-size: 2.2rem;
+      color: #00eaff;
+      margin-bottom: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 18px 0;
+      color: #fff;
+      font-size: 1.1rem;
+      transition: all 0.4s ease;
+      transform: translateX(-10px);
+      opacity: 0;
+      animation: slideInLeft 0.6s ease forwards;
+    }
+
+    .contact-item:nth-child(1) { animation-delay: 0.2s; }
+    .contact-item:nth-child(2) { animation-delay: 0.4s; }
+    .contact-item:nth-child(3) { animation-delay: 0.6s; }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-10px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .contact-item i {
+      margin-left: 10px;
+      font-size: 1.3rem;
+      color: #00eaff;
+      transition: all 0.3s ease;
+    }
+
+    .contact-item:hover {
+      transform: translateX(0px);
+    }
+
+    .contact-item:hover i {
+      transform: rotate(20deg) scale(1.2);
+      color: #ff4ec2;
+    }
+
+    .social-icons {
+      margin-top: 30px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 1.8rem;
+      color: #fff;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .social-icons a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #00eaff;
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a:hover::after {
+      width: 100%;
+    }
+
+    .social-icons a:hover {
+      color: #00eaff;
+      transform: scale(1.2) rotate(10deg);
+    }
+
+    .twasel-text {
+      margin-top: 25px;
+      font-size: 0.9rem;
+      opacity: 0.6;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .desktop-menu {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+      .card_h2{font-size: 1.5rem;}
+      .card_p{font-size: 12px;}
+      .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image-section {
+        width: 100%;
+        height: 300px;
+      }
+
+      .image-section img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+      .servicesh2 {
+        font-size: 1.2rem;
+      }
+      .services-container {
+      grid-template-columns: auto;
+      grid-gap: 10px;}
+      .tab-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+      }
+      .skills-grid {
+        grid-template-columns: auto auto;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<!-- قائمة التنقل -->
-<header>
-<nav>
-  <a href="#"style="width:55px;height:50px;"><img src="img/my.png" style="width:55px;height:50px;border-radius: 30px;"></a>
-  <!-- روابط القائمة على الشاشة الكبيرة -->
-  <ul>
-    <li><a href="#">الرئيسية</a></li>
-    <li><a href="#aboutme">عنّا</a></li>
-    <li><a href="#servise">الخدمات</a></li>
-    <li><a href="#runapp">الانجازات</a></li>
-    <li><a href="#contactForm">اتصل بنا</a></li>
-  </ul>
-  <a href="index.html" style="color:white;font-size: 22px;height:15px; text-align: center;" >English</a>
-  <!-- زر الفتح على الهاتف -->
-  <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
-</nav>
-
-<!-- القائمة الجانبية -->
-<div id="sideMenu" class="side-menu">
-  <div style="height:50px;display: flex;justify-content: left;"><a href="#"style="width:55px;height:50px;"><img src="img/Picsart_25-05-31_19-23-31-314.png" style="width:55px;height:50px;" onclick="toggleMenu()"></a></div>
-  <div style="margin-top: 30px;position: fixed;padding-left:20px;">
-    <a href="#" class="side-menu-a" onclick="toggleMenu()">الرئيسية</a>
-    <a href="#aboutme" class="side-menu-a" onclick="toggleMenu()">عنّا</a>
-    <a href="#servise" class="side-menu-a" onclick="toggleMenu()">الخدمات</a>
-    <a href="#runapp" class="side-menu-a" onclick="toggleMenu()">الانجازات</a>
-    <a href="#contactForm" class="side-menu-a" onclick="toggleMenu()">اتصل بنا</a>
+  <!-- Top Navigation -->
+  <div class="top-nav">
+    <div class="logo">🧑‍💻 مهندس برمجيات</div>
+    <div class="desktop-menu">
+      <a href="index.html">English</a>
+      <a href="#Skills">المهارات</a>
+      <a href="#About-us">عنّا</a>
+      <a href="#Services">الخدمات</a>
+      <a href="#Achievements">الانجازات</a>
+      <a href="#Contact-us">التواصل معنا</a>
+    </div>
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
-</div>
-</header>
-  <main>
-    <!-- Hero Section with Slider -->
-    <div class="hero-slider">
-        <div id="slide1" class="slideshow"></div>
-        <div class="content">
-          
-          <h2 style="color: black;font-size: 22px;text-align: center;" > 🧑‍💻 مهندس برمجيات</h2>
-          <p class="card_p" style="text-align: center;">أنا مطوّر برمجيات متخصص في بناء حلول تقنية متقدمة ومتكاملة، أعمل بشغف على تحويل الأفكار إلى مشاريع رقمية واقعية وفعالة. أمتلك خبرة واسعة في تطوير المواقع والتطبيقات، وتصميم الأنظمة الذكية التي تعتمد على الذكاء الاصطناعي والحوسبة السحابية. أسعى دائمًا لتقديم تجربة مستخدم ممتازة، وكود نظيف قابل للتوسعة والصيانة، مع مواكبة أحدث التقنيات والممارسات في عالم البرمجة. أؤمن بأن البرمجة ليست مجرد كود، بل هي فن في تقديم الحلول، ودقة في التنفيذ، وابتكار في التفكير. عملت على مشاريع متنوعة تخدم أفرادًا وشركات، من نماذج أولية بسيطة إلى تطبيقات معقّدة متكاملة. أُتقن التعامل مع التحديات الفنية واللوجستية، وأعرف كيف أبدأ من الصفر وأبني شيئًا قويًا وفعّالًا من الداخل إلى الخارج.</p>
-           <div style="justify-content: center;display: grid;grid-template-columns: auto auto;grid-gap: 10px;width:100%;height:50px;margin: 10px 0px 10px 0px;">
-              <a href="https://play.google.com/store/apps/dev?id=8923189061028862719" class="img_size"> <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"alt="جوجل بلاي" class="img_size">
-              </a>
-              <a  onclick="showAlert()" class="img_size"> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"alt="آب ستور" class="img_size">
-             </a>
+
+  <!-- Sidebar for Mobile -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="index.html">English</a></li>
+      <li><a href="#Skills">المهارات</a></li>
+      <li><a href="#About-us">عنّا</a></li>
+      <li><a href="#Services">الخدمات</a></li>
+      <li><a href="#Services">الانجازات</a></li>
+      <li><a href="#Contact-us">التواصل معنا</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <header>
+      <canvas class="canvas-home" id="snowCanvas"></canvas>
+      <div class="center-text">مرحباً بكم في عالم البرمجيات</div>
+
+    </header>
+    <div style="justify-content: center;display: grid;grid-template-columns: auto auto;grid-gap: 10px;width:100%;height:50px;margin: 10px 0px 10px 0px;">
+      <a href="https://play.google.com/store/apps/dev?id=8923189061028862719" class="img_size"> <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"alt="جوجل بلاي" class="img_size"></a>
+      <a  onclick="showAlert()" class="img_size"> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"alt="آب ستور" class="img_size"></a>
+    </div>
+    <section class="hero" id="Services">
+      <h2 class="servicesh2">🚀 ماذا أستطيع أن أقدّم؟</h2>
+      <div class="card2">
+        <div class="nav-button" id="prev">⬅️</div>
+        <div class="nav-button" id="next">➡️</div>
+        <div id="section1" class="container section1 active">
+          <div style="padding: 10px 60px;display: grid;justify-content: center;align-items: center;grid-gap: 15px;">
+            <h2 class="card_h2" >تطوير الواجهة الأمامية</h2>
+            <p class="card_p">✅ تصميم صفحات ويب جذابة وسريعة الاستجابة باستخدام HTML، CSS، JavaScript.</p>
+            <p class="card_p">✅ استخدام أطر مثل Tailwind CSS وReact لبناء واجهات احترافية وعصرية.</p>
+            <p class="card_p">✅ فهم متقدم لتجربة المستخدم (UX) وتصميم واجهة المستخدم (UI). </p>
           </div>
-        </div>   
-    </div>
-
-
-    <div class="omage_center"  id="servise"><div class="img_center"><h2 class="center_h2">🚀 ماذا أستطيع أن أقدّم؟</h2></div></div>
-    <div class="carousel">
-        <div class="images" id="images">
-            <div class="image">
-              <div style="float: left;width: 30%;height: 280px;">
-                <div style="width:100%;height:95%;align-items: center;">
-                  <img src="/home/abrahim/cromaxweb/image/Picsart_25-02-14_15-32-40-403.png" class="img_size">
-                </div>
-              </div>
-              <div style="float: left;width: 70%;height: 280px;">
-                <h2 class="card_h2" > تطوير الواجهة الأمامية</h2>
-                <h5 class="card_h2" >✅ تطوير الواجهة الأمامية (Front-End Development):</h5>
-                <p class="card_p">تصميم صفحات ويب جذابة وسريعة الاستجابة باستخدام HTML، CSS، JavaScript.</p>
-                <p class="card_p">استخدام أطر مثل Tailwind CSS وReact لبناء واجهات احترافية وعصرية.</p>
-                <p class="card_p">فهم متقدم لتجربة المستخدم (UX) وتصميم واجهة المستخدم (UI).</p>
-              </div>
-            </div>
-            <div class="image">
-              <div style="float: left;width: 30%;height: 280px;">
-                <div style="width:100%;height:95%;align-items: center;">
-                  <img src="/home/abrahim/Videos/Picsart/Picsart_24-11-15_00-54-31-262.jpg" class="img_size">
-                </div>
-              </div>
-              <div style="float: left;width: 70%;height: 280px;">
-                <h2 class="card_h2" >تطوير الواجهة الخلفية</h2>
-                <h5 class="card_h2" >✅ تطوير الواجهة الخلفية (Back-End Development):</h5>
-                <p class="card_p">برمجة منطق الخوادم باستخدام Python وFastAPI.</p>
-                <p class="card_p">إدارة قواعد البيانات وربطها بالموقع أو التطبيق (PostgreSQL، SQLite).</p>
-                <p class="card_p">تأمين البيانات وبناء واجهات API متكاملة للتطبيقات.</p>
-              </div>
-            </div>
-            <div class="image">
-              <div style="float: left;width: 30%;height: 280px;">
-                <div style="width:100%;height:95%;align-items: center;">
-                  <img src="/home/abrahim/cromaxweb/image/Picsart_25-02-14_15-32-40-403.png" class="img_size">
-                </div>
-              </div>
-              <div style="float: left;width: 70%;height: 280px;">
-                <h2 class="card_h2" >✅ تطوير التطبيقات (App Development):</h2>
-                <h5 class="card_h2" >تصميم صور واجهات التطبيقات والمواقع بطريقة احترافية.</h5>
-                <p class="card_p">بناء تطبيقات أندرويد باستخدام Kivy/KivyMD وPython.</p>
-                <p class="card_p">استخدام الذكاء الاصطناعي (PyTorch) لمعالجة الصور والصوت داخل التطبيق.</p>
-                <p class="card_p">رفع التطبيقات على متجر Google Play وإدارتها.</p>
-              </div>
-            </div>
-            <div class="image">
-              <div style="float: left;width: 30%;height: 280px;">
-                <div style="width:100%;height:95%;align-items: center;">
-                  <img src="/home/abrahim/cromaxweb/image/Picsart_25-02-14_15-32-40-403.png" class="img_size">
-                </div>
-              </div>
-              <div style="float: left;width: 70%;height: 280px;">
-                <h2 class="card_h2" >ربط التطبيقات بالسحابة الإلكترونية</h2>
-                <h5 class="card_h2" >✅ ربط التطبيقات بالسحابة الإلكترونية (Cloud Integration):</h5>
-                <p class="card_p">ربط التطبيقات بالسيرفرات السحابية مثل AWS (EC2, S3, Lambda).</p>
-                <p class="card_p">رفع ومعالجة الصور/الصوت على السحابة وإرجاع النتائج للتطبيق بشكل مباشر.</p>
-                <p class="card_p">بناء أنظمة تلقائية لتحديث محتوى التطبيقات من السحابة دون تحديث APK.</p>
-              </div>
-            </div>
-            <div class="image">
-              <div style="float: left;width: 30%;height: 280px;">
-                <div style="width:100%;height:95%;align-items: center;">
-                  <img src="/home/abrahim/cromaxweb/image/Picsart_25-02-14_15-32-40-403.png" class="img_size">
-                </div>
-              </div>
-              <div style="float: left;width: 70%;height: 280px;">
-                <h2 class="card_h2" >تحسين محركات البحث</h2>
-                <h5 class="card_h2" >✅ تحسين محركات البحث (SEO):</h5>
-                <p class="card_p">فهرسة صفحات الويب بشكل سليم.</p>
-                <p class="card_p">تحسين ظهور المواقع في نتائج البحث.</p>
-                <p class="card_p">تحليل الكلمات المفتاحية واستخدام الأدوات الاحترافية.</p>
-              </div>
-            </div>
-            <div class="image">
-              <div style="float: left;width: 30%;height: 280px;">
-                <div style="width:100%;height:95%;align-items: center;">
-                  <img src="/home/abrahim/cromaxweb/image/Picsart_25-02-14_15-32-40-403.png" class="img_size">
-                </div>
-              </div>
-              <div style="float: left;width: 70%;height: 280px;">
-                <h2 class="card_h2" >✅ إدارة الحملات الإعلانية:</h2>
-                <h5 class="card_h2" >تخطيط وتنفيذ حملات Google Ads.</h5>
-                <p class="card_p">إعداد صور الحملات التسويقية الجذابة.</p>
-                <p class="card_p">تحليل النتائج وتحسينها للحصول على أفضل عائد على الاستثمار (ROI).</p>
-                <p class="card_p">جذب آلاف المستخدمين للتطبيقات من خلال الإعلانات المستهدفة.</p>
-              </div>
-            </div>
         </div>
-        <button class="button left" onclick="moveLeft()">&#10094;</button>
-        <button class="button right" onclick="moveRight()">&#10095;</button>
-    </div>
-    <div class="omage_center"  id="runapp"><div class="img_center"><h2 class="center_h2">📱 ماذا أنجزت فعليًا؟</h2></div></div>
-    <div style="padding: 20px;">
-      <div class="carousel2">
-        <div class="images" id="images2">
-            <div class="image2">
-              <h1 class="card_h2" style="color: black;text-align: center;">python ai</h1>
-              <h2 class="card_h2" style="color: black;text-align: center;">هو تطبيق متكامل يدمج دردشة بالذكاء الاصطناعي، محرر نصوص متقدم، مولد صور باستخدام الذكاء الاصطناعي، محول صيغ الملفات، أدوات استخراج النصوص من الصور والملفات وتعديلها، ألعاب تفاعلية، ودورات تعليمية برمجية من الصفر إلى الاحتراف في بايثون، بهدف تلبية احتياجات المستخدمين في الترفيه، التعلم، والإنتاجية بشكل سهل وفعال</h2>
-              <a href="https://play.google.com/store/apps/details?id=org.information.information" style="float: left;width: 100%;height: 50px;"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="جوجل بلاي" class="img_size"></a>
-            </div>
-            <div class="image2">
-              <h1 class="card_h2" style="color: black;text-align: center;">دروس الأمن السيبراني</h1>
-              <h2 class="card_h2" style="color: black;text-align: center;">تقدم هذه المنصة التعليمية تجربة فريدة ومتطورة في تعلم الأمن السيبراني، حيث تجمع بين محتوى دروس متخصصة، أدوات تفاعلية، وتقنيات الذكاء الاصطناعي لتوفير تعليم شخصي، تفاعلي، وفعّال. تم تصميم التطبيق ليكون مناسبًا للمبتدئين والمحترفين على حد سواء، مع تقديم مسار تعليمي متدرج يغطي أساسيات الأمن السيبراني، تقنيات الاختراق الأخلاقي، حماية البيانات، التشفير، والاستجابة للحوادث السيبرانية</h2>
-              <a href="https://play.google.com/store/apps/details?id=org.cybersecurity.abrahim711.org.cybersecurity.abrahim711" style="float: left;width: 100%;height: 50px;"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="جوجل بلاي" class="img_size"></a>
-            </div>
-            <div class="image2">
-              <h1 class="card_h2" style="color: black;text-align: center;">فحص الثغرات الأمنية</h1>
-              <h2 class="card_h2" style="color: black;text-align: center;">تقدم هذه المنصة أداة متكاملة ومتطورة لفحص الثغرات الأمنية في الأنظمة، الشبكات، وتطبيقات الويب، بهدف كشف النقاط الضعيفة وتعزيز مستوى الحماية السيبرانية للمؤسسات والأفراد. يعتمد التطبيق على أحدث التقنيات في مجال الأمن السيبراني، ويتميز بواجهة سهلة الاستخدام وميزات متقدمة تساعد الفرق التقنية على تحديد الثغرات بسرعة وبدقة عالية</h2>
-              <a onclick="showAlert()" style="float: left;width: 100%;height: 50px;"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="جوجل بلاي" class="img_size"></a>
-            </div>
-            <div class="image2">
-              <h1 class="card_h2" style="color: black;text-align: center;">محرر صور وصوت ذكي</h1>
-              <h2 class="card_h2" style="color: black;text-align: center;">يُعد هذا التطبيق منصة متقدمة تجمع بين تحرير الصور والصوت باستخدام تقنيات الذكاء الاصطناعي، ليقدم أدوات مبتكرة وسهلة الاستخدام تُمكّن المستخدمين من تعديل وتطوير محتواهم الإبداعي بسرعة ودقة عالية. سواء كنت مصورًا، منشئ محتوى، أو هاويًا، يوفر التطبيق أدوات متخصصة لتحسين الصور والأصوات، إضافة إلى إمكانيات تحويلية مذهلة تتيح للمستخدمين ابتكار محتوى فريد من نوعه.</h2>
-              <a  onclick="showAlert()" style="float: left;width: 100%;height: 50px;"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="جوجل بلاي" class="img_size"></a>
-            </div>
+        <div id="section2" class="container section2">
+          <div style="padding: 10px 60px;display: grid;justify-content: center;align-items: center;grid-gap: 15px;">
+            <h2 class="card_h2" >تطوير الواجهة الخلفية</h2>
+            <p class="card_p">✅ برمجة منطق الخوادم باستخدام Python وFastAPI. </p>
+            <p class="card_p">✅ إدارة قواعد البيانات وربطها بالموقع أو التطبيق (PostgreSQL، SQLite).</p>
+            <p class="card_p">✅ تأمين البيانات وبناء واجهات API متكاملة للتطبيقات.</p>
+          </div>
         </div>
-        <div id="alertBox">
-          <div id="alertText">هذه الخدمات قيد التطوير لم يتم اطلاقها بعد</div>
-          <button id="closeAlert" onclick="hideAlert()">إغلاق</button>
+        <div id="section3" class="container section3">
+          <div style="padding: 10px 60px;display: grid;justify-content: center;align-items: center;grid-gap: 15px;">
+            <h2 class="card_h2" >تطوير التطبيقات</h2>
+            <p class="card_p">✅ تصميم صور واجهات التطبيقات والمواقع بطريقة احترافية.</p>
+            <p class="card_p">✅ بناء تطبيقات أندرويد باستخدام Kivy/KivyMD وPython. </p>
+            <p class="card_p">✅ استخدام الذكاء الاصطناعي (PyTorch) لمعالجة الصور والصوت داخل التطبيق. </p>
+            <p class="card_p">✅ رفع التطبيقات على متجر Google Play وإدارتها.</p>
+          </div>
         </div>
-        <button class="button left" onclick="moveLeft()">&#10094;</button>
-        <button class="button right" onclick="moveRight()">&#10095;</button>
-      </div>
-    </div>
-    <div class="mysee">
-      <div class="omage_center"><div class="img_center"><h2 class="center_h2">💼 رؤيتي</h2></div></div>
-      <p style="text-align: center;color: black;font-size: 22px;"> أسعى لأن أكون شريكًا تقنيًا موثوقًا لكل من يطمح إلى تحويل فكرته أو مشروعه إلى منتج رقمي حقيقي وقابل للنمو. أركز على بناء برمجيات تعمل بكفاءة عالية، وتتكيّف مع احتياجات المستخدمين وسرعة تغيّر السوق.وكذالك أبني حلول تقنية تنفع الناس وتسهل حياتهم. أحاول دايمًا أقدّم شيء مختلف، فيه ذوق، وفيه قيمة فعلية. ما أشتغل على مشروع إلا وأنا مؤمن إنه ممكن يكون ناجح. </p>
-    </div>
-    <div>
-      <div class="omage_center"><div class="img_center"><h2 class="center_h2">🛠️ التقنيات اللي أعمل عليها:</h2></div></div>
-      <div class="myseework">
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Python3</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">JavaScript</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">HTML</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">CSS</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Kivy/KivyMD</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">React</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Flask</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">FastAPI</h2></div>
-        
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">PyTorch</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">OpenCV</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Whisper</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">SQLite</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">PostgreSQL</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">AWS S3</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Lambda</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">API Gateway</h2></div>
-        
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Web Apps</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">APK (Android)</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Tailwind CSS</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Azure</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">google ADS</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">facebook ADS</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">SEO</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">Lambda</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">UX/UI</h2></div>
-        
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">github</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">wordprss</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">json</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">API</h2></div>
-        <div class="myseeworkbutton"><h2 class="card_p" style="text-align: center;">linux</h2></div>
-      </div>
-    </div>
-    <div class="mysee"style="margin-top: 20px;">
-      <div class="omage_center"><div class="img_center"><h2 class="center_h2">🔍 مبادئي في العمل</h2></div></div>
-      <h2 class="card_h2" style="color: black;">✅ الاحترافية: ألتزم بأعلى معايير الجودة في كل سطر برمجي</h2>
-      <h2 class="card_h2" style="color: black;">✅ المرونة: أتكيف مع متطلبات المشروع واحتياجات العميل</h2>
-      <h2 class="card_h2" style="color: black;">✅ الاستمرارية: لا أقدّم كودًا فقط، بل أبني أساسًا يمكن الاعتماد عليه والنمو فوقه</h2>
-      <h2 class="card_h2" style="color: black;">✅ الشفافية: أحرص على التواصل المستمر والوضوح في كل خطوة من مراحل التطوير</h2>
-    </div>
-    
-    <div style="padding: 20px;"><div class="omage_center"><div class="img_center"><h2 class="center_h2">اراء المستخدمين</h2></div></div><div class="marquee-container" id="marqueeContainer"></div></div>
-    
-    <div class="aboutmeone">
-      <div class="omage_center" id="aboutme"><div class="img_center"><h2 class="center_h2">👨‍💻 معلومات عنا</h2></div></div>
-      <p style="text-align: center;color: black;font-size: 22px;">أنا أقدّم قيمة حقيقية. أعمل على مشاريع كأنها مشاريعي الخاصة، وأعتبر نجاحها نجاحًا شخصيًا لي. لذلك، أحرص على التفاصيل الدقيقة، وسرعة الأداء، والموثوقية في التسليم.لو عندك فكرة، أو حتى لو ما تعرف من فين تبدأ، كلمني وخلينا نرسم طريق النجاح معًا خطوة خطوة.</p>
-      <div class="aboutme">
-        <div><h1 class="card_h2" style="color: black;">: البريد الالكتروني</h1>
-        <a class="card_p" href="mailto:abrahim71192@gmail.com" style="text-align: center;color: black;">abrahim71192@gmail.com</a>
+        <div id="section4" class="container section4">
+          <div style="padding: 10px 60px;display: grid;justify-content: center;align-items: center;grid-gap: 15px;">
+            <h2 class="card_h2" >ربط التطبيقات بالسحابة الإلكترونية</h2>
+            <p class="card_p">✅ ربط التطبيقات بالسيرفرات السحابية مثل AWS (EC2, S3, Lambda). </p>
+            <p class="card_p">✅ رفع ومعالجة الصور/الصوت على السحابة وإرجاع النتائج للتطبيق بشكل مباشر. </p>
+            <p class="card_p">✅ بناء أنظمة تلقائية لتحديث محتوى التطبيقات من السحابة دون تحديث APK.</p>
+          </div>
         </div>
-        <div><h1 class="card_h2" style="color: black;">: الهاتف</h1>
-        <a class="card_p" href="tel:+967775796741" style="text-align: center;color: black;">+967775796741</a>
+        <div id="section5" class="container section5">
+          <div style="padding: 10px 60px;display: grid;justify-content: center;align-items: center;grid-gap: 15px;">
+            <h2 class="card_h2" >تحسين محركات البحث</h2>
+            <p class="card_p">✅ فهرسة صفحات الويب بشكل سليم.</p>
+            <p class="card_p">✅ تحسين ظهور المواقع في نتائج البحث.</p>
+            <p class="card_p">✅ تحليل الكلمات المفتاحية واستخدام الأدوات الاحترافية.</p>
+          </div>
         </div>
-        <div><h1 class="card_h2" style="color: black;">: الواتس اب</h1>
-        <a class="card_p" href="https://wa.me/967711924474" style="text-align: center;color: black;">+967711924474</a>
+        <div class="dots" id="dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
         </div>
       </div>
+      <section class="services-section" id="Achievements">
+        <h2 class="servicesh2">📱 ماذا أنجزت فعليًا؟</h2>
+        <div class="services-container">
+          <div class="service-card"><div class="service-icon">📱</div><div class="service-title">python ai</div><div class="service-desc">هو تطبيق متكامل يدمج دردشة بالذكاء الاصطناعي، محرر نصوص متقدم، مولد صور باستخدام الذكاء الاصطناعي، محول صيغ الملفات، أدوات استخراج النصوص من الصور والملفات وتعديلها، ألعاب تفاعلية، ودورات تعليمية برمجية من الصفر إلى الاحتراف في بايثون، بهدف تلبية احتياجات المستخدمين في الترفيه، التعلم، والإنتاجية بشكل سهل وفعال</div><a href="https://play.google.com/store/apps/details?id=org.information.information"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="جوجل بلاي" style="float: center;width: 200px;height: 50px;"></a></div>
+          <div class="service-card"><div class="service-icon">📱</div><div class="service-title">دروس الأمن السيبراني</div><div class="service-desc">تقدم هذه المنصة التعليمية تجربة فريدة ومتطورة في تعلم الأمن السيبراني، حيث تجمع بين محتوى دروس متخصصة، أدوات تفاعلية، وتقنيات الذكاء الاصطناعي لتوفير تعليم شخصي، تفاعلي، وفعّال. تم تصميم التطبيق ليكون مناسبًا للمبتدئين والمحترفين على حد سواء، مع تقديم مسار تعليمي متدرج يغطي أساسيات الأمن السيبراني، تقنيات الاختراق الأخلاقي، حماية البيانات، التشفير، والاستجابة للحوادث السيبرانية</div><a href="https://play.google.com/store/apps/details?id=org.cybersecurity.abrahim711.org.cybersecurity.abrahim711"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="جوجل بلاي" style="float: center;width: 200px;height: 50px;"></a></div>
+          <div class="service-card"><div class="service-icon">🌐</div><div class="service-title">فحص الثغرات الأمنية</div><div class="service-desc">تقدم هذه المنصة أداة متكاملة ومتطورة لفحص الثغرات الأمنية في الأنظمة، الشبكات، وتطبيقات الويب، بهدف كشف النقاط الضعيفة وتعزيز مستوى الحماية السيبرانية للمؤسسات والأفراد. يعتمد التطبيق على أحدث التقنيات في مجال الأمن السيبراني، ويتميز بواجهة سهلة الاستخدام وميزات متقدمة تساعد الفرق التقنية على تحديد الثغرات بسرعة وبدقة عالية</div></div>
+          <div class="service-card"><div class="service-icon">🔧</div><div class="service-title">AI photo and audio editor</div><div class="service-desc">يُعد هذا التطبيق منصة متقدمة تجمع بين تحرير الصور والصوت باستخدام تقنيات الذكاء الاصطناعي، ليقدم أدوات مبتكرة وسهلة الاستخدام تُمكّن المستخدمين من تعديل وتطوير محتواهم الإبداعي بسرعة ودقة عالية. سواء كنت مصورًا، منشئ محتوى، أو هاويًا، يوفر التطبيق أدوات متخصصة لتحسين الصور والأصوات، إضافة إلى إمكانيات تحويلية مذهلة تتيح للمستخدمين ابتكار محتوى فريد من نوعه.</div></div>
+          <div class="service-card"><div class="service-icon">🔥</div><div class="service-title">✅ إدارة الحملات الإعلانية</div><div class="service-desc">تخطيط وتنفيذ حملات Google + facebook Ads. إعداد صور الحملات التسويقية الجذابة و تحليل النتائج وتحسينها للحصول على أفضل عائد على الاستثمار و جذب آلاف المستخدمين للتطبيقات من خلال الإعلانات المستهدفة</div></div>
+          
+        </div>
+      </section>
+      <div class="card">
+        <div class="hero-container"><div class="moving-bg" id="movingBg"></div>💼 رؤيتي</div>
+        <p>أسعى لأن أكون شريكًا تقنيًا موثوقًا لكل من يطمح إلى تحويل فكرته أو مشروعه إلى منتج رقمي حقيقي وقابل للنمو. أركز على بناء برمجيات تعمل بكفاءة عالية، وتتكيّف مع احتياجات المستخدمين وسرعة تغيّر السوق.وكذالك أبني حلول تقنية تنفع الناس وتسهل حياتهم. أحاول دايمًا أقدّم شيء مختلف، فيه ذوق، وفيه قيمة فعلية. ما أشتغل على مشروع إلا وأنا مؤمن إنه ممكن يكون ناجح. </p>
+      </div>
+      <section class="services-section" id="Skills">
+        <h2 class="servicesh2">🛠️ مهارتي</h2>
+    <div class="category-tabs">
+      <button class="tab-btn active" data-category="all">الكل</button>
+      <button class="tab-btn" data-category="frontend">واجهة المستخدم</button>
+      <button class="tab-btn" data-category="backend">السيرفر</button>
+      <button class="tab-btn" data-category="tools">أدوات</button>
+      <button class="tab-btn" data-category="database">قواعد البيانات</button>
+      <button class="tab-btn" data-category="mobile">تطبيقات الجوال</button>
+      <button class="tab-btn" data-category="language">لغات البرمجة</button>
+      <button class="tab-btn" data-category="design">تصميم</button>
     </div>
-    <div class="message" id="responseMessage"></div>
 
-    <form id="contactForm" action="send_email.php" method="post" onsubmit="return validateForm()">
-        <div class="omage_center"><div class="img_center"><h2 class="center_h2">اتصل بنا</h2></div></div>
-        <label for="name">الاسم:</label>
-        <input type="text" id="name" name="name" required>
+    <!-- الشبكة التي تحتوي على المهارات -->
+    <div class="skills-grid" id="skillsGrid">
 
-        <label for="email">البريد الإلكتروني:</label>
-        <input type="email" id="email" name="email" required>
+      <!-- Frontend -->
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon">🌐</div>
+        <div class="skill-name">HTML & CSS</div>
+      </div>
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">JavaScript</div>
+      </div>
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon">⚛️</div>
+        <div class="skill-name">React.js</div>
+      </div>
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-name">Tailwind CSS</div>
+      </div>
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-name">Sass</div>
+      </div>
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon">🌀</div>
+        <div class="skill-name">angular.js</div>
+      </div>
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon">🚀</div>
+        <div class="skill-name">Next.js</div>
+      </div>
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon">🔷</div>
+        <div class="skill-name">Bootstrap</div>
+      </div>
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon">🔧</div>
+        <div class="skill-name">jQuery</div>
+      </div>
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon">🧩</div>
+        <div class="skill-name">UX/UI</div>
+      </div>
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon">🚀</div>
+        <div class="skill-name">SEO</div>
+      </div>
 
-        <label for="message">الرسالة:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+      <!-- Backend -->
+      <div class="skill-card" data-category="backend">
+        <div class="skill-icon">🔧</div>
+        <div class="skill-name">Node.js</div>
+      </div>
+      <div class="skill-card" data-category="backend">
+        <div class="skill-icon">🚀</div>
+        <div class="skill-name">FastAPI</div>
+      </div>
+      <div class="skill-card" data-category="backend">
+        <div class="skill-icon">📘</div>
+        <div class="skill-name">Flask</div>
+      </div>
+      <div class="skill-card" data-category="backend">
+        <div class="skill-icon">🐘</div>
+        <div class="skill-name">PostgreSQL</div>
+      </div>
+      <div class="skill-card" data-category="backend">
+        <div class="skill-icon">💾</div>
+        <div class="skill-name">json</div>
+      </div>
+      <div class="skill-card" data-category="backend">
+        <div class="skill-icon">🧩</div>
+        <div class="skill-name">Django</div>
+      </div>
+      <div class="skill-card" data-category="backend">
+        <div class="skill-icon">🔥</div>
+        <div class="skill-name">SQLite</div>
+      </div>
+      <div class="skill-card" data-category="backend">
+        <div class="skill-icon">☁️</div>
+        <div class="skill-name">Firebase</div>
+      </div>
+      <div class="skill-card" data-category="backend">
+        <div class="skill-icon">📡</div>
+        <div class="skill-name">PyTorch</div>
+      </div>
+      <div class="skill-card" data-category="backend">
+        <div class="skill-icon">🔌</div>
+        <div class="skill-name">REST APIs</div>
+      </div>
 
-        <input type="submit" value="إرسال">
-    </form>
-    
-  </main>
-  <footer class="footer">
-    <p class="card_h2" style="text-align: center;">© 2025 جميع الحقوق محفوظة</p>
-  </footer>
+      <!-- Tools -->
+      <div class="skill-card" data-category="tools">
+        <div class="skill-icon">⚙️</div>
+        <div class="skill-name">Git & GitHub</div>
+      </div>
+      <div class="skill-card" data-category="tools">
+        <div class="skill-icon">📦</div>
+        <div class="skill-name">Docker</div>
+      </div>
+      <div class="skill-card" data-category="tools">
+        <div class="skill-icon">🧪</div>
+        <div class="skill-name">Azure</div>
+      </div>
+      <div class="skill-card" data-category="tools">
+        <div class="skill-icon">🛠️</div>
+        <div class="skill-name">Webpack</div>
+      </div>
+      <div class="skill-card" data-category="tools">
+        <div class="skill-icon">☁️</div>
+        <div class="skill-name">AWS</div>
+      </div>
+      <div class="skill-card" data-category="tools">
+        <div class="skill-icon">⎈</div>
+        <div class="skill-name">Kubernetes</div>
+      </div>
+      <div class="skill-card" data-category="tools">
+        <div class="skill-icon">🚦</div>
+        <div class="skill-name">Nginx</div>
+      </div>
+      <div class="skill-card" data-category="tools">
+        <div class="skill-icon">📘</div>
+        <div class="skill-name">Postman</div>
+      </div>
+      <div class="skill-card" data-category="tools">
+        <div class="skill-icon">🐧</div>
+        <div class="skill-name">Linux</div>
+      </div>
 
+      <!-- Databases -->
+      <div class="skill-card" data-category="database">
+        <div class="skill-icon">📊</div>
+        <div class="skill-name">MySQL</div>
+      </div>
+      <div class="skill-card" data-category="database">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">Redis</div>
+      </div>
+      <div class="skill-card" data-category="database">
+        <div class="skill-icon">☁️</div>
+        <div class="skill-name">Firebase DB</div>
+      </div>
+      <div class="skill-card" data-category="database">
+        <div class="skill-icon">📘</div>
+        <div class="skill-name">SQLite</div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="skill-card" data-category="mobile">
+        <div class="skill-icon">📱</div>
+        <div class="skill-name">Kivy</div>
+      </div>
+      <div class="skill-card" data-category="mobile">
+        <div class="skill-icon">⚛️</div>
+        <div class="skill-name">React Native</div>
+      </div>
+      <div class="skill-card" data-category="mobile">
+        <div class="skill-icon">🍎</div>
+        <div class="skill-name">KivyMD</div>
+      </div>
+      <div class="skill-card" data-category="mobile">
+        <div class="skill-icon">🤖</div>
+        <div class="skill-name">python</div>
+      </div>
+
+      <!-- Programming Languages -->
+      <div class="skill-card" data-category="language">
+        <div class="skill-icon">☕</div>
+        <div class="skill-name">Java</div>
+      </div>
+      <div class="skill-card" data-category="language">
+        <div class="skill-icon">💎</div>
+        <div class="skill-name">JavaScript</div>
+      </div>
+      <div class="skill-card" data-category="language">
+        <div class="skill-icon">🟢</div>
+        <div class="skill-name">Python</div>
+      </div>
+      <div class="skill-card" data-category="language">
+        <div class="skill-icon">🐚</div>
+        <div class="skill-name">Bash</div>
+      </div>
+
+      <!-- Design -->
+      <div class="skill-card" data-category="design">
+        <div class="skill-icon">🖼️</div>
+        <div class="skill-name">Figma</div>
+      </div>
+      <div class="skill-card" data-category="design">
+        <div class="skill-icon">🖌️</div>
+        <div class="skill-name">Adobe XD</div>
+      </div>
+      <div class="skill-card" data-category="design">
+        <div class="skill-icon">✏️</div>
+        <div class="skill-name">Illustrator</div>
+      </div>
+      <div class="skill-card" data-category="design">
+        <div class="skill-icon">📷</div>
+        <div class="skill-name">Photoshop</div>
+      </div>
+      <div class="skill-card" data-category="design">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">Canva</div>
+      </div>
+
+    </div>
+  </section>
+      <div class="card">
+        <h2 class="card_h2">🔍 مبادئي في العمل</h2>
+        <p class="card_p">✅ الاحترافية: ألتزم بأعلى معايير الجودة في كل سطر برمجي</p>
+        <p class="card_p">✅ المرونة: أتكيف مع متطلبات المشروع واحتياجات العميل</p>
+        <p class="card_p">✅  الاستمرارية: لا أقدّم كودًا فقط، بل أبني أساسًا يمكن الاعتماد عليه والنمو فوقه</p>
+        <p class="card_p">✅  الشفافية: أحرص على التواصل المستمر والوضوح في كل خطوة من مراحل التطوي</p>
+      </div>
+      <div class="content-wrapper" id="About-us">
+        <div class="text-section">
+          <h2 class="ABOTh2">👨‍💻 معلومات عنا</h2>
+          <p class="ABOTp">أنا مطوّر برمجيات متخصص في بناء حلول تقنية متقدمة ومتكاملة، أعمل بشغف على تحويل الأفكار إلى مشاريع رقمية واقعية وفعالة. أمتلك خبرة واسعة في تطوير المواقع والتطبيقات، وتصميم الأنظمة الذكية التي تعتمد على الذكاء الاصطناعي والحوسبة السحابية. أسعى دائمًا لتقديم تجربة مستخدم ممتازة، وكود نظيف قابل للتوسعة والصيانة، مع مواكبة أحدث التقنيات والممارسات في عالم البرمجة. أؤمن بأن البرمجة ليست مجرد كود، بل هي فن في تقديم الحلول، ودقة في التنفيذ، وابتكار في التفكير. عملت على مشاريع متنوعة تخدم أفرادًا وشركات، من نماذج أولية بسيطة إلى تطبيقات معقّدة متكاملة. أُتقن التعامل مع التحديات الفنية واللوجستية، وأعرف كيف أبدأ من الصفر وأبني شيئًا قويًا وفعّالًا من الداخل إلى الخارج.</p>
+        </div>
+        <div class="image-section">
+          <img src="img/my.png" alt="صورة العرض">
+          <div class="fade-overlay"></div>
+        </div>
+      </div>
+      <div class="contact-card" id="Contact-us">
+        <div class="contact-title">تواصل معي</div>
+        <div class="twasel-text">أنا أقدّم قيمة حقيقية. أعمل على مشاريع كأنها مشاريعي الخاصة، وأعتبر نجاحها نجاحًا شخصيًا لي. لذلك، أحرص على التفاصيل الدقيقة، وسرعة الأداء، والموثوقية في التسليم.لو عندك فكرة، أو حتى لو ما تعرف من فين تبدأ، كلمني وخلينا نرسم طريق النجاح معًا خطوة خطوة.</div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span><a href="mailto:abrahim71192@gmail.com" style="text-align: center;color: white;">abrahim71192@gmail.com</a></span>
+        </div>
+
+        <div class="contact-item">
+          <i class="fab fa-whatsapp"></i>
+          <span><a  href="https://wa.me/967711924474" style="text-align: center;color: white;">+967 711 924 474</a></span>
+        </div>
+
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span><a href="tel:+967775796741" style="text-align: center;color: white;">+967 775 796 741</a></span>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://facebook.com/software.engineer.711" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/@Software_hackr" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/software_engineer711" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/967711924474" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      &copy; 2025 جميع الحقوق محفوظة
+    </footer>
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+
+    menuToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+
+    // Close sidebar when clicking outside
+    document.addEventListener('click', function(event) {
+      if (!sidebar.contains(event.target) && !menuToggle.contains(event.target)) {
+        sidebar.classList.remove('active');
+      }
+    });
+  </script>
+  <script>
+    const canvas = document.getElementById('snowCanvas');
+    const ctx = canvas.getContext('2d');
+
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    });
+
+    // إعداد الثلج
+    const snowFlakes = [];
+    const flakesCount = 200;
+
+    function Flake() {
+      this.x = Math.random() * width;
+      this.y = Math.random() * height;
+      this.radius = Math.random() * 3 + 1; // حجم الثلج
+      this.speed = Math.random() * 1 + 0.5;
+      this.wind = (Math.random() - 0.5) * 1;
+    }
+
+    Flake.prototype.draw = function () {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+      ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
+      ctx.fill();
+    };
+
+    Flake.prototype.update = function () {
+      this.y += this.speed;
+      this.x += this.wind;
+
+      if (this.y > height) {
+        this.y = 0;
+        this.x = Math.random() * width;
+      }
+
+      this.draw();
+    };
+
+    // إنشاء الثلوج
+    for (let i = 0; i < flakesCount; i++) {
+      snowFlakes.push(new Flake());
+    }
+
+    function animateSnow() {
+      ctx.clearRect(0, 0, width, height);
+      for (let flake of snowFlakes) {
+        flake.update();
+      }
+      requestAnimationFrame(animateSnow);
+    }
+
+    animateSnow();
+
+    // Parallax Effect on Container
+    const container = document.getElementById('heroContainer');
+
+    container.addEventListener('mousemove', e => {
+      const rect = container.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      const rotateX = -(y - centerY) / 50;
+      const rotateY = (x - centerX) / 50;
+
+      container.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+    });
+
+    container.addEventListener('mouseleave', () => {
+      container.style.transform = `rotateX(0deg) rotateY(0deg) scale(1)`;
+    });
+  </script>
+  <script>
+    const bg = document.getElementById('movingBg');
+    let offset = 0;
+
+    function animateGradient() {
+      offset -= 0.5; // سرعة الحركة (كلما قل الرقم كلما كانت أبطأ)
+      if (offset < -100) offset = 0;
+      bg.style.backgroundPosition = offset + '% 0';
+      requestAnimationFrame(animateGradient);
+    }
+
+    animateGradient();
+  </script>
+  <script>
+    const sections = document.querySelectorAll('.container');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+
+    let currentIndex = 0;
+
+    function showSection(index) {
+      if (index < 0) index = sections.length - 1;
+      if (index >= sections.length) index = 0;
+
+      sections.forEach((sec, i) => {
+        sec.classList.remove('active');
+        if (i === index) sec.classList.add('active');
+      });
+
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+
+      currentIndex = index;
+    }
+
+    function nextSection() {
+      showSection(currentIndex + 1);
+    }
+
+    function prevSection() {
+      showSection(currentIndex - 1);
+    }
+
+    // إعداد الأزرار
+    nextBtn.addEventListener('click', nextSection);
+    prevBtn.addEventListener('click', prevSection);
+
+    // إعداد النقاط
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => showSection(index));
+    });
+
+    // تنقل تلقائي كل 5 ثوانٍ
+    setInterval(nextSection, 5000);
+
+    // عرض أول حاوية عند التحميل
+    showSection(0);
+  </script>
+  <script>
+    // تفعيل تأثير الدخول عند التمرير
+    const cards = document.querySelectorAll('.service-card');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+  <script>
+    const tabs = document.querySelectorAll('.tab-btn');
+    const cards2 = document.querySelectorAll('.skill-card');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        const category = tab.getAttribute('data-category');
+
+        cards2.forEach(card => {
+          card.style.display = (category === 'all' || card.getAttribute('data-category') === category) ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
+  
 </body>
 </html>
