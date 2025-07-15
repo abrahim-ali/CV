@@ -747,6 +747,79 @@
       opacity: 0.6;
       font-style: italic;
     }
+    .contact-container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      max-width: 600px;
+      width: 100%;
+      padding: 40px 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-container:hover {
+      transform: translateY(-10px);
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px 15px;
+      margin: 15px 0;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    form input:focus,
+    form textarea:focus {
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 10px #00eaff;
+    }
+
+    form button {
+      background: #00eaff;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-size: 1rem;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    form button:hover {
+      background: #ff4ec2;
+      transform: scale(1.05);
+    }
+
+    .thank-you-message {
+      display: none;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .icon-check {
+      font-size: 4rem;
+      color: #00eaff;
+      margin-bottom: 20px;
+      animation: bounce 1s infinite alternate;
+    }
+
+    @keyframes bounce {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.1); }
+    }
 
     footer {
       text-align: center;
@@ -1171,6 +1244,44 @@
           <a href="https://wa.me/967711924474" target="_blank"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
+      
+      <div class="contact-container" id="contactForm">
+    <h2 class="servicesh2">اتصل بنا</h2>
+
+    <!-- START FORM -->
+    <form id="myForm" action="https://formsubmit.co/el/fozaya" method="POST" onsubmit="showThankYou(event)">
+      <input type="hidden" name="_token" value="NnPWlArL06Vcj7cgMN7fj8MkvZWTacXC0OuZOPvB">
+
+      <!-- اسم المستخدم -->
+      <input type="text" name="name" placeholder="اسمك الكامل" required>
+
+      <!-- البريد الإلكتروني -->
+      <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+
+      <!-- الموضوع -->
+      <input type="text" name="subject" placeholder="الموضوع" required>
+
+      <!-- الرسالة -->
+      <textarea name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+
+      <!-- إعدادات FormSubmit -->
+      <input type="hidden" name="_next" value="#" />
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <!-- زر الإرسال -->
+      <button type="submit">إرسال الرسالة</button>
+
+    </form>
+  </div>
+
+  <!-- رسالة الشكر -->
+  <div class="thank-you-message" id="thankYouMessage">
+    <i class="fas fa-check-circle icon-check"></i>
+    <h1>تم استلام رسالتك!</h1>
+    <p>شكرًا لمراسلتنا، سنقوم بالرد عليك في أقرب وقت.</p>
+    <button onclick="goBack()" class="back-home">إعادة المحاولة</button>
+  </div>
 
     </section>
 
@@ -1367,6 +1478,36 @@
         });
       });
     });
+  </script>
+  <script>
+    function showThankYou(event) {
+      event.preventDefault(); // منع إعادة التحميل
+
+      const form = document.getElementById('myForm');
+      const contactForm = document.getElementById('contactForm');
+      const thankYouMessage = document.getElementById('thankYouMessage');
+
+      // التحقق من صحة النموذج
+      if (form.checkValidity()) {
+        fetch(form.action, {
+          method: form.method,
+          body: new FormData(form)
+        }).then(() => {
+          contactForm.style.display = 'none';
+          thankYouMessage.style.display = 'block';
+        }).catch(err => {
+          alert("حدث خطأ أثناء إرسال الرسالة. حاول مجددًا.");
+          console.error(err);
+        });
+      } else {
+        form.reportValidity();
+      }
+    }
+
+    function goBack() {
+      document.getElementById('contactForm').style.display = 'block';
+      document.getElementById('thankYouMessage').style.display = 'none';
+    }
   </script>
   
 </body>
