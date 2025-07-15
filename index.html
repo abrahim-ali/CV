@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>🧑‍💻 Software Engineer</title>
@@ -132,14 +132,6 @@
       height: 400px;
     }
 
-    header h1 {
-      font-size: 2.5rem;
-      background: linear-gradient(to right, white, yellow);
-      -webkit-background-clip: text;
-      color: transparent;
-      animation: glow 3s infinite alternate;
-    }
-
     @keyframes glow {
       from { text-shadow: 0 0 10px #6c63ff; }
       to { text-shadow: 0 0 20px #ff4ecd; }
@@ -188,6 +180,7 @@
       top: 50%;
       left: 50%;
       font-size: 2.5rem;
+      font-weight: bold;
       background: linear-gradient(to right, white, yellow);
       -webkit-background-clip: text;
       color: transparent;
@@ -514,20 +507,6 @@
       z-index: 2;
     }
 
-    /* تأثير شعاعي عند المرور */
-    .service-card::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-      transform: rotate(0deg);
-      transition: transform 5s linear;
-      z-index: 1;
-    }
-
     .service-card:hover::before {
       transform: rotate(360deg);
     }
@@ -821,42 +800,42 @@
         <div id="section1" class="container section1 active">
           <div style="padding: 10px 60px;display: grid;justify-content: center;align-items: center;grid-gap: 15px;">
             <h2 class="card_h2" >Front-End Development</h2>
-            <p class="card_p">Design attractive and responsive web pages using HTML، CSS، JavaScript ✅</p>
-            <p class="card_p">Use frameworks like Tailwind CSS and React to build professional and modern interfaces ✅</p>
-            <p class="card_p">Advanced understanding of User Experience (UX) and User Interface (UI) design ✅</p>
+            <p class="card_p">✅ Design attractive and responsive web pages using HTML، CSS، JavaScript </p>
+            <p class="card_p">✅ Use frameworks like Tailwind CSS and React to build professional and modern interfaces </p>
+            <p class="card_p">✅ Advanced understanding of User Experience (UX) and User Interface (UI) design </p>
           </div>
         </div>
         <div id="section2" class="container section2">
           <div style="padding: 10px 60px;display: grid;justify-content: center;align-items: center;grid-gap: 15px;">
             <h2 class="card_h2" >Back-end development</h2>
-            <p class="card_p">Server logic programming using Python and FastAPI ✅</p>
-            <p class="card_p">Managing databases and connecting them to the website or application (PostgreSQL, SQLite) ✅</p>
-            <p class="card_p">Securing data and building integrated APIs for applications ✅</p>
+            <p class="card_p">✅ Server logic programming using Python and FastAPI </p>
+            <p class="card_p">✅ Managing databases and connecting them to the website or application (PostgreSQL, SQLite) </p>
+            <p class="card_p">✅ Securing data and building integrated APIs for applications </p>
           </div>
         </div>
         <div id="section3" class="container section3">
           <div style="padding: 10px 60px;display: grid;justify-content: center;align-items: center;grid-gap: 15px;">
             <h2 class="card_h2" >App Development</h2>
-            <p class="card_p">Professional design of application and website interface images ✅</p>
-            <p class="card_p">Building Android apps using Kivy/KivyMD and Python ✅</p>
-            <p class="card_p">Using AI (PyTorch) to process images and audio within the application ✅</p>
-            <p class="card_p">Upload and manage apps to the Google Play Store ✅</p>
+            <p class="card_p">✅ Professional design of application and website interface images </p>
+            <p class="card_p">✅ Building Android apps using Kivy/KivyMD and Python </p>
+            <p class="card_p">✅ Using AI (PyTorch) to process images and audio within the application </p>
+            <p class="card_p">✅ Upload and manage apps to the Google Play Store </p>
           </div>
         </div>
         <div id="section4" class="container section4">
           <div style="padding: 10px 60px;display: grid;justify-content: center;align-items: center;grid-gap: 15px;">
             <h2 class="card_h2" >Cloud Integration API</h2>
-            <p class="card_p">Connect applications to cloud servers such as AWS (EC2, S3, Lambda) ✅</p>
-            <p class="card_p">Upload and process images/audio to the cloud and return the results to the application directly ✅</p>
-            <p class="card_p">Build automated systems to update app content from the cloud without updating the APK ✅</p>
+            <p class="card_p">✅ Connect applications to cloud servers such as AWS (EC2, S3, Lambda) </p>
+            <p class="card_p">✅ Upload and process images/audio to the cloud and return the results to the application directly </p>
+            <p class="card_p">✅ Build automated systems to update app content from the cloud without updating the APK </p>
           </div>
         </div>
         <div id="section5" class="container section5">
           <div style="padding: 10px 60px;display: grid;justify-content: center;align-items: center;grid-gap: 15px;">
             <h2 class="card_h2" >Search Engine Optimization</h2>
-            <p class="card_p">Properly index web pages(SEO) ✅</p>
-            <p class="card_p">Improve the appearance of websites in search results ✅</p>
-            <p class="card_p">Keyword analysis and use of professional tools ✅</p>
+            <p class="card_p">✅ Properly index web pages(SEO) </p>
+            <p class="card_p">✅ Improve the appearance of websites in search results </p>
+            <p class="card_p">✅ Keyword analysis and use of professional tools </p>
           </div>
         </div>
         <div class="dots" id="dots">
@@ -884,14 +863,14 @@
       <section class="services-section">
         <h2 class="servicesh2">🛠️ The techniques</h2>
     <div class="category-tabs">
-      <button class="tab-btn active" data-category="all">الكل</button>
-      <button class="tab-btn" data-category="frontend">واجهة المستخدم</button>
-      <button class="tab-btn" data-category="backend">السيرفر</button>
-      <button class="tab-btn" data-category="tools">أدوات</button>
-      <button class="tab-btn" data-category="database">قواعد البيانات</button>
-      <button class="tab-btn" data-category="mobile">تطبيقات الجوال</button>
-      <button class="tab-btn" data-category="language">لغات البرمجة</button>
-      <button class="tab-btn" data-category="design">تصميم</button>
+      <button class="tab-btn active" data-category="all">everyone</button>
+      <button class="tab-btn" data-category="frontend">User Interface</button>
+      <button class="tab-btn" data-category="backend">Server</button>
+      <button class="tab-btn" data-category="tools">tools</button>
+      <button class="tab-btn" data-category="database">Databases</button>
+      <button class="tab-btn" data-category="mobile">Mobile applications</button>
+      <button class="tab-btn" data-category="language">Programming languages</button>
+      <button class="tab-btn" data-category="design">design</button>
     </div>
 
     <!-- الشبكة التي تحتوي على المهارات -->
@@ -920,15 +899,11 @@
       </div>
       <div class="skill-card" data-category="frontend">
         <div class="skill-icon">🌀</div>
-        <div class="skill-name">Vue.js</div>
+        <div class="skill-name">angular.js</div>
       </div>
       <div class="skill-card" data-category="frontend">
         <div class="skill-icon">🚀</div>
         <div class="skill-name">Next.js</div>
-      </div>
-      <div class="skill-card" data-category="frontend">
-        <div class="skill-icon">📘</div>
-        <div class="skill-name">TypeScript</div>
       </div>
       <div class="skill-card" data-category="frontend">
         <div class="skill-icon">🔷</div>
@@ -938,6 +913,14 @@
         <div class="skill-icon">🔧</div>
         <div class="skill-name">jQuery</div>
       </div>
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon">🧩</div>
+        <div class="skill-name">UX/UI</div>
+      </div>
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon">🚀</div>
+        <div class="skill-name">SEO</div>
+      </div>
 
       <!-- Backend -->
       <div class="skill-card" data-category="backend">
@@ -946,11 +929,11 @@
       </div>
       <div class="skill-card" data-category="backend">
         <div class="skill-icon">🚀</div>
-        <div class="skill-name">Express.js</div>
+        <div class="skill-name">FastAPI</div>
       </div>
       <div class="skill-card" data-category="backend">
         <div class="skill-icon">📘</div>
-        <div class="skill-name">PHP</div>
+        <div class="skill-name">Flask</div>
       </div>
       <div class="skill-card" data-category="backend">
         <div class="skill-icon">🐘</div>
@@ -958,7 +941,7 @@
       </div>
       <div class="skill-card" data-category="backend">
         <div class="skill-icon">💾</div>
-        <div class="skill-name">MongoDB</div>
+        <div class="skill-name">json</div>
       </div>
       <div class="skill-card" data-category="backend">
         <div class="skill-icon">🧩</div>
@@ -966,7 +949,7 @@
       </div>
       <div class="skill-card" data-category="backend">
         <div class="skill-icon">🔥</div>
-        <div class="skill-name">Laravel</div>
+        <div class="skill-name">SQLite</div>
       </div>
       <div class="skill-card" data-category="backend">
         <div class="skill-icon">☁️</div>
@@ -974,7 +957,7 @@
       </div>
       <div class="skill-card" data-category="backend">
         <div class="skill-icon">📡</div>
-        <div class="skill-name">GraphQL</div>
+        <div class="skill-name">PyTorch</div>
       </div>
       <div class="skill-card" data-category="backend">
         <div class="skill-icon">🔌</div>
@@ -992,7 +975,7 @@
       </div>
       <div class="skill-card" data-category="tools">
         <div class="skill-icon">🧪</div>
-        <div class="skill-name">Jest</div>
+        <div class="skill-name">Azure</div>
       </div>
       <div class="skill-card" data-category="tools">
         <div class="skill-icon">🛠️</div>
@@ -1034,13 +1017,13 @@
       </div>
       <div class="skill-card" data-category="database">
         <div class="skill-icon">📘</div>
-        <div class="skill-name">MariaDB</div>
+        <div class="skill-name">SQLite</div>
       </div>
 
       <!-- Mobile -->
       <div class="skill-card" data-category="mobile">
         <div class="skill-icon">📱</div>
-        <div class="skill-name">Flutter</div>
+        <div class="skill-name">Kivy</div>
       </div>
       <div class="skill-card" data-category="mobile">
         <div class="skill-icon">⚛️</div>
@@ -1048,11 +1031,11 @@
       </div>
       <div class="skill-card" data-category="mobile">
         <div class="skill-icon">🍎</div>
-        <div class="skill-name">Swift (iOS)</div>
+        <div class="skill-name">KivyMD</div>
       </div>
       <div class="skill-card" data-category="mobile">
         <div class="skill-icon">🤖</div>
-        <div class="skill-name">Kotlin (Android)</div>
+        <div class="skill-name">python</div>
       </div>
 
       <!-- Programming Languages -->
@@ -1061,16 +1044,12 @@
         <div class="skill-name">Java</div>
       </div>
       <div class="skill-card" data-category="language">
-        <div class="skill-icon">🔸</div>
-        <div class="skill-name">C++</div>
-      </div>
-      <div class="skill-card" data-category="language">
         <div class="skill-icon">💎</div>
-        <div class="skill-name">Ruby</div>
+        <div class="skill-name">JavaScript</div>
       </div>
       <div class="skill-card" data-category="language">
         <div class="skill-icon">🟢</div>
-        <div class="skill-name">Go</div>
+        <div class="skill-name">Python</div>
       </div>
       <div class="skill-card" data-category="language">
         <div class="skill-icon">🐚</div>
@@ -1093,6 +1072,10 @@
       <div class="skill-card" data-category="design">
         <div class="skill-icon">📷</div>
         <div class="skill-name">Photoshop</div>
+      </div>
+      <div class="skill-card" data-category="design">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">Canva</div>
       </div>
 
     </div>
