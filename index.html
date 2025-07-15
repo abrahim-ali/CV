@@ -8,8 +8,6 @@
   <meta name="google-site-verification" content="IZ1TksytMA4-MnWocCkNH8VTtm2b5UhTPuGFw8aWHA0" />
   <style>
     * {
-      margin: 0;
-      padding: 0;
       box-sizing: border-box;
     }
 
@@ -152,8 +150,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      padding: 20px;
+      padding: 0px 20px;
     }
     .card {
       margin: 20px;
@@ -190,13 +187,13 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 20px;
-      color: #00ffe7;
-      text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+      font-size: 2.5rem;
+      background: linear-gradient(to right, white, yellow);
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: glow 3s infinite alternate;
       z-index: 2;
-      pointer-events: none;
-      user-select: none;
+      transform: translate(-50%, -50%);
     }
     .hero-container {
       position: relative;
@@ -768,7 +765,7 @@
         padding: 8px 16px;
       }
       .skills-grid {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
       }
     }
   </style>
@@ -809,9 +806,7 @@
   <div class="main-content">
     <header>
       <canvas class="canvas-home" id="bgCanvas"></canvas>
-      <div class="center-text">
-        <h1>Welcome to the world of programming</h1>
-      </div>
+      <div class="center-text">Welcome to the world of programming</div>
 
     </header>
     <div style="justify-content: center;display: grid;grid-template-columns: auto auto;grid-gap: 10px;width:100%;height:50px;margin: 10px 0px 10px 0px;">
@@ -883,7 +878,7 @@
         </div>
       </section>
       <div class="card">
-        <div class="hero-container"><div class="moving-bg" id="movingBg"></div><h1>💼 My vision</h1></div>
+        <div class="hero-container"><div class="moving-bg" id="movingBg"></div>💼 My vision</div>
         <p>I strive to be a trusted technical partner for anyone who aspires to transform their idea or project into a viable, scalable digital product. I focus on building highly efficient software that adapts to user needs and the rapidly changing market. I also build technical solutions that benefit people and make their lives easier. I always try to offer something different, tasteful, and truly valuable. I never take on a project unless I believe it can be successful.</p>
       </div>
       <section class="services-section">
