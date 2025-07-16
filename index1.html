@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>ابراهيم الورافي</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css "/>
+  <meta name="google-site-verification" content="IZ1TksytMA4-MnWocCkNH8VTtm2b5UhTPuGFw8aWHA0" />
+  <!-- Meta Description -->
+  <meta name="description" content="Professional software engineer specializing in web development, application architecture, and modern tech solutions. Contact me for custom websites, scalable apps, and technical consulting.">
+
+  <!-- Keywords -->
+  <meta name="keywords" content="ibrahim ali ,software engineer, web developer, full stack developer, website design, web app, programming services, JavaScript, React, Node.js, PHP, Laravel, HTML, CSS, SEO, freelance developer,HTML & CSS,UX/UI,Node.js,FastAPI">
+
+  <!-- Author -->
+  <meta name="author" content="ibrahim ali">
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="ibrahim ali - Software Engineer | Web Development & Tech Solutions">
+  <meta property="og:description" content="Professional software engineer specializing in web development, application architecture, and modern tech solutions. Contact me for custom websites, scalable apps, and technical consulting.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abrahim-ali.github.io/CV/">
+  <meta property="og:image" content="img/my.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ibrahim ali - Software Engineer | Web Development & Tech Solutions">
+  <meta name="twitter:description" content="Professional software engineer specializing in web development, application architecture, and modern tech solutions. Contact me for custom websites, scalable apps, and technical consulting.">
+  <meta name="twitter:image" content="img/my.png">
+  <meta name="twitter:site" content="@Software_hackr">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/my.png">
+
+  <!-- Structured Data (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org ",
+    "@type": "Person",
+    "name": "ibrahim ali",
+    "url": "https://abrahim-ali.github.io/CV/",
+    "sameAs": [
+      "https://facebook.com/software.engineer.711",
+      "https://github.com/abrahim-ali/",
+      "https://instagram.com/software_engineer711",
+      "https://twitter.com/@Software_hackr"
+    ],
+    "jobTitle": "Software Engineer",
+    "description": "Full-stack web developer and software engineer with expertise in building high-performance websites and scalable applications using modern technologies."
+  }
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body, html {
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(ellipse at center, #0f0f0f 0%, #0a0f2c 100%);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* Navbar خرافية */
+    .cosmic-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.03);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      z-index: 999;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      color: #00eaff;
+      font-weight: bold;
+      text-shadow: 0 0 10px #00eaff, 0 0 20px #ff4ec2;
+      transition: transform 0.3s ease;
+      letter-spacing: 1px;
+      position: relative;
+    }
+
+    .logo::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right, #00eaff, #ff4ec2);
+      animation: glowLine 2s infinite alternate;
+    }
+
+    @keyframes glowLine {
+      0% { opacity: 0.6; transform: scaleX(0.9); }
+      100% { opacity: 1; transform: scaleX(1.1); }
+    }
+
+    .logo:hover {
+      transform: scale(1.1) rotate(2deg);
+      text-shadow: 0 0 15px #00eaff, 0 0 30px #ff4ec2;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links li {
+      list-style: none;
+      position: relative;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.1rem;
+      position: relative;
+      padding: 5px 10px;
+      transition: all 0.3s ease;
+      text-shadow: 0 0 5px #fff;
+    }
+
+    .nav-links li a::before {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: linear-gradient(to right, #00eaff, #ff4ec2);
+      transition: width 0.3s ease;
+    }
+
+    .nav-links li a:hover::before {
+      width: 100%;
+    }
+
+    .nav-links li a:hover {
+      color: #00eaff;
+      text-shadow: 0 0 10px #00eaff, 0 0 20px #ff4ec2;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #00eaff;
+      transition: transform 0.3s ease;
+    }
+
+    .menu-toggle:hover {
+      transform: rotate(90deg) scale(1.1);
+    }
+
+    /* Sidebar للجوال */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: -280px;
+      width: 250px;
+      height: 100%;
+      background: #0a0f2c;
+      backdrop-filter: blur(15px);
+      box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
+      padding: 80px 20px;
+      transition: right 0.4s ease;
+      z-index: 1000;
+    }
+
+    .sidebar.active {
+      right: 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      display: block;
+      padding: 10px 15px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      position: relative;
+      color: #00eaff;
+      background: rgba(0, 234, 255, 0.05);
+      box-shadow: 0 0 15px #00eaff;
+      transform: translateX(5px);
+    }
+
+    .sidebar ul li a::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: linear-gradient(to right, #00eaff, #ff4ec2);
+      transition: width 0.3s ease;
+    }
+
+    .sidebar ul li a:hover::before {
+      width: 100%;
+    }
+
+    .sidebar ul li a:hover {
+      color: #00eaff;
+      background: rgba(0, 234, 255, 0.05);
+      box-shadow: 0 0 15px #00eaff;
+      transform: translateX(5px);
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      z-index: 999;
+    }
+
+    .overlay.active {
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+      
+    }
+
+    /* حاوية النجوم المتحركة */
+    .main-container {
+      width: 100%;
+      height: 400px;
+      margin-top: 70px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cosmic-bg {
+      position: absolute;
+      width: 200%; /* لتمكين الحركة الأفقية */
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: radial-gradient(circle at center, #0f0f0f 0%, #000 100%);
+      animation: moveStars infinite alternate ease-in-out 30s;
+      z-index: 0;
+    }
+
+    @keyframes moveStars {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(-50%); }
+      100% { transform: translateX(0); }
+    }
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.3;
+      animation-name: twinkle;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.5); }
+    }
+
+    .moon {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      width: 90px;
+      height: 90px;
+      background: radial-gradient(circle, #fff, #ccc);
+      border-radius: 50%;
+      box-shadow: 0 0 30px #fff, 0 0 60px #ffeb3b, 0 0 100px #ffeb3b;
+      z-index: 2;
+      animation: pulseSun 2s infinite alternate;
+    }
+
+    @keyframes pulseSun {
+      0% { box-shadow: 0 0 30px #fff, 0 0 60px #ffeb3b; }
+      100% { box-shadow: 0 0 60px #ffeb3b, 0 0 100px #ffeb3b; }
+    }
+
+    .content-wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      max-width: 900px;
+      width: 90%;
+      padding: 30px;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+      z-index: 10;
+    }
+
+    .text-section h2 {
+      font-size: 1.8rem;
+      color: #00eaff;
+      text-align: center;
+      margin-bottom: 15px;
+      text-shadow: 0 0 10px #00eaff, 0 0 20px #ff4ec2;
+      animation: neonGlow 2s infinite alternate;
+    }
+
+    @keyframes neonGlow {
+      0% { text-shadow: 0 0 10px #00eaff, 0 0 20px #ff4ec2; }
+      100% { text-shadow: 0 0 20px #00eaff, 0 0 30px #ff4ec2; }
+    }
+
+    .image-section img {
+      width: 100%;
+      margin-top: 20px;
+      height: 200px;
+      border-radius: 15px;
+      transition: transform 0.4s ease;
+      box-shadow: 0 0 15px #00eaff;
+    }
+
+    .image-section:hover img {
+      transform: scale(1.05) rotate(1deg);
+      box-shadow: 0 0 20px #ff4ec2, 0 0 30px #00eaff;
+    }
+
+    .glass-effect {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 30px rgba(0, 234, 255, 0.5), 0 0 60px rgba(255, 78, 194, 0.3);
+      pointer-events: none;
+      opacity: 0;
+      z-index: 100;
+      transition: opacity 0.3s ease;
+    }
+
+    .main-container:hover .glass-effect {
+      opacity: 0.5;
+    }
+    
+    .services-container {
+      position: relative;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    /* عنوان الخدمات */
+    .services-header {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .services-header h2 {
+      font-size: 3rem;
+      color: #00eaff;
+      text-shadow: 0 0 20px #00eaff, 0 0 40px #ff4ec2;
+      animation: pulseTitle 2s infinite alternate ease-in-out;
+    }
+
+    @keyframes pulseTitle {
+      from { text-shadow: 0 0 20px #00eaff, 0 0 40px #ff4ec2; }
+      to { text-shadow: 0 0 40px #00eaff, 0 0 70px #ff4ec2; transform: scale(1); }
+    }
+
+    /* الشبكة التي تحتوي على الخدمات */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+      max-width: 1300px;
+      margin: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* خدمة واحدة */
+    .service-card {
+      perspective: 1000px;
+      position: relative;
+    }
+
+    .service-card-inner {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 25px;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.6s cubic-bezier(0.03, 0.98, 0.52, 0.96);
+      transform-style: preserve-3d;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      position: relative;
+      cursor: pointer;
+      height: 100%;
+    }
+
+    .service-card:hover .service-card-inner {
+      transform: rotateY(10deg) rotateX(5deg);
+      box-shadow: 0 20px 50px rgba(0, 234, 255, 0.3), 0 0 60px rgba(255, 78, 194, 0.2);
+    }
+
+    .service-icon {
+      font-size: 3rem;
+      color: #00eaff;
+      margin-bottom: 20px;
+      transition: all 0.4s ease;
+    }
+
+    .service-card:hover .service-icon {
+      transform: rotate(10deg) scale(1.2);
+      color: #ff4ec2;
+    }
+
+    .service-title {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 15px;
+      text-shadow: 0 0 10px #00eaff;
+    }
+
+    .service-desc {
+      font-size: 1rem;
+      opacity: 0.85;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .service-button {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 30px;
+      background: linear-gradient(to right, #00eaff, #ff4ec2);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: glowBtn 1.5s infinite alternate;
+    }
+
+    @keyframes glowBtn {
+      0% { box-shadow: 0 0 10px #00eaff; }
+      100% { box-shadow: 0 0 20px #ff4ec2; }
+    }
+
+    .service-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff4ec2, 0 0 30px #00eaff;
+    }
+
+    /* زجاج ديناميكي داخل البطاقة */
+    .glass-hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background: radial-gradient(circle at center, rgba(0, 234, 255, 0.1) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 0;
+    }
+
+    .service-card:hover .glass-hover {
+      opacity: 0.5;
+    }
+
+    /* النجوم الخلفية */
+    .stars-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 100%;
+      animation: moveStars 30s linear infinite;
+      z-index: 0;
+    }
+
+    .star-dot {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.3;
+      animation: twinkleStar 3s infinite ease-in-out;
+    }
+
+    @keyframes twinkleStar {
+      0%, 100% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.5); }
+    }
+
+    @keyframes moveStars {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* تأثير 3D Card Tilt */
+    .tilt {
+      transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+      transform-origin: center center;
+    }
+    
+    /* ========== Footer ========== */
+    .cosmic-footer {
+      position: relative;
+      padding: 80px 20px 40px;
+      text-align: center;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .footer-content {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .footer-title {
+      font-size: 2.5rem;
+      color: #00eaff;
+      text-shadow: 0 0 15px #00eaff, 0 0 30px #ff4ec2;
+      animation: pulseTitle 2s infinite alternate;
+    }
+
+    @keyframes pulseTitle {
+      from { text-shadow: 0 0 15px #00eaff, 0 0 30px #ff4ec2; }
+      to { text-shadow: 0 0 30px #00eaff, 0 0 50px #ff4ec2; }
+    }
+
+    .footer-desc {
+      font-size: 1rem;
+      opacity: 0.7;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      font-size: 1.5rem;
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #00eaff, #ff4ec2);
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #00eaff;
+      position: relative;
+    }
+
+    .social-icons a::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      pointer-events: none;
+      background: radial-gradient(circle, #00eaff 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .social-icons a:hover::after {
+      opacity: 0.2;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2) rotate(10deg);
+      box-shadow: 0 0 20px #ff4ec2, 0 0 30px #00eaff;
+      background: linear-gradient(135deg, #ff4ec2, #00eaff);
+    }
+
+    .footer-bottom {
+      font-size: 0.9rem;
+      opacity: 0.5;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 20px;
+      margin-top: 30px;
+    }
+
+    /* زجاج ديناميكي */
+    .glass-effect2 {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 30px rgba(0, 234, 255, 0.5), 0 0 60px rgba(255, 78, 194, 0.3);
+      pointer-events: none;
+      opacity: 0;
+      z-index: 100;
+      transition: opacity 0.3s ease;
+    }
+
+    .cosmic-footer:hover .glass-effect2 {
+      opacity: 0.5;
+    }
+
+    @media (max-width: 600px) {
+      .content-wrapper {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .text-section h2 {
+        font-size: 1.4rem;
+      }
+      .services-header h2 {
+        font-size: 2.2rem;
+      }
+
+      .service-title {
+        font-size: 1.3rem;
+      }
+      .footer-title {
+        font-size: 1.8rem;
+      }
+
+      .footer-desc {
+        font-size: 0.9rem;
+      }
+    }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="cosmic-navbar">
+    <div class="logo">MySite</div>
+    <ul class="nav-links">
+      <li><a href="#">الرئيسية</a></li>
+      <li><a href="#about">من أنا</a></li>
+      <li><a href="#services">خدماتي</a></li>
+      <li><a href="#portfolio">أعمالي</a></li>
+      <li><a href="#contact">اتصل بي</a></li>
+    </ul>
+    <div class="menu-toggle" onclick="toggleSidebar()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+
+  <!-- Sidebar للجوال -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="#" onclick="toggleSidebar()">الرئيسية</a></li>
+      <li><a href="#about" onclick="toggleSidebar()">من أنا</a></li>
+      <li><a href="#services" onclick="toggleSidebar()">خدماتي</a></li>
+      <li><a href="#portfolio" onclick="toggleSidebar()">أعمالي</a></li>
+      <li><a href="#contact" onclick="toggleSidebar()">اتصل بي</a></li>
+    </ul>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+  <!-- الحاوية الرئيسية -->
+  <div class="main-container">
+    <div class="cosmic-bg" id="stars"></div>
+    <div class="moon" id="sun"></div>
+    <div class="content-wrapper">
+      <div class="text-section">
+        <h2>اهلا بك في مستقبل الإبداع</h2>
+        <p style="font-size: 1rem; opacity: 0.8;">
+          نحن نقدم لك أفضل الخدمات الرقمية والإبداعية التي تساعدك على بناء هوية رقمية قوية ومميزة.
+        </p>
+      </div>
+      <div class="image-section">
+        <img src="img/my.png" alt="صورة الموقع">
+      </div>
+    </div>
+    <div class="glass-effect" id="glass"></div>
+  </div>
+  
+  <!-- حاوية الخدمات -->
+  <div class="services-container" id="services">
+    <div class="services-header">
+      <h2>خدمات برمجية خيالية</h2>
+    </div>
+
+    <div class="services-grid">
+      <!-- خدمة 1 -->
+      <div class="service-card tilt" data-tilt>
+        <div class="glass-hover"></div>
+        <div class="service-card-inner">
+          <i class="fas fa-code service-icon"></i>
+          <h3 class="service-title">تطوير المواقع</h3>
+          <p class="service-desc">
+            تصميم وبرمجة مواقع ويب احترافية باستخدام HTML, CSS, JavaScript, React, Vue.
+            أكواد نظيفة، متجاوبة، وتعمل بسرعة عالية على جميع الأجهزة.
+          </p>
+          <a href="#contact" class="service-button">طلب الخدمة</a>
+        </div>
+      </div>
+
+      <!-- خدمة 2 -->
+      <div class="service-card tilt" data-tilt>
+        <div class="glass-hover"></div>
+        <div class="service-card-inner">
+          <i class="fas fa-mobile-alt service-icon"></i>
+          <h3 class="service-title">تطبيقات الجوال</h3>
+          <p class="service-desc">
+            بناء تطبيقات Android وiOS بأداء عالٍ باستخدام Flutter أو React Native.
+            واجهات جذابة وتجربة مستخدم رائعة.
+          </p>
+          <a href="#contact" class="service-button">طلب الخدمة</a>
+        </div>
+      </div>
+
+      <!-- خدمة 3 -->
+      <div class="service-card tilt" data-tilt>
+        <div class="glass-hover"></div>
+        <div class="service-card-inner">
+          <i class="fas fa-server service-icon"></i>
+          <h3 class="service-title">تطوير الواجهات الداخلية</h3>
+          <p class="service-desc">
+            إنشاء APIs وقواعد بيانات قوية مع Laravel, Node.js, Express.js, MongoDB, PostgreSQL.
+            حلول آمنة وقابلة للتوسع.
+          </p>
+          <a href="#contact" class="service-button">طلب الخدمة</a>
+        </div>
+      </div>
+
+      <!-- خدمة 4 -->
+      <div class="service-card tilt" data-tilt>
+        <div class="glass-hover"></div>
+        <div class="service-card-inner">
+          <i class="fas fa-paint-brush service-icon"></i>
+          <h3 class="service-title">تصميم واجهات</h3>
+          <p class="service-desc">
+            تصميم واجهات مستخدم UX/UI احترافية، مرنة، وجذابة بصريًا.
+            مع التركيز على تجربة المستخدم والبساطة.
+          </p>
+          <a href="#contact" class="service-button">طلب الخدمة</a>
+        </div>
+      </div>
+
+      <!-- خدمة 5 -->
+      <div class="service-card tilt" data-tilt>
+        <div class="glass-hover"></div>
+        <div class="service-card-inner">
+          <i class="fas fa-cogs service-icon"></i>
+          <h3 class="service-title">حلول الذكاء الاصطناعي</h3>
+          <p class="service-desc">
+            دمج تقنيات الذكاء الاصطناعي مثل Chatbots, Image Recognition, AI Models.
+            حلول ذكية ومستقبلية لمشاريعك.
+          </p>
+          <a href="#contact" class="service-button">طلب الخدمة</a>
+        </div>
+      </div>
+
+      <!-- خدمة 6 -->
+      <div class="service-card tilt" data-tilt>
+        <div class="glass-hover"></div>
+        <div class="service-card-inner">
+          <i class="fas fa-cloud service-icon"></i>
+          <h3 class="service-title">استضافة ونشر</h3>
+          <p class="service-desc">
+            نشر المواقع والتطبيقات على منصات سحابية مثل AWS, Netlify, Vercel.
+            مع ضمان الأمان والأداء العالي.
+          </p>
+          <a href="#contact" class="service-button">طلب الخدمة</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- نجوم خلفية -->
+    <div class="stars-bg" id="starsBg"></div>
+  </div>
+  <!-- Footer -->
+  <footer class="cosmic-footer">
+    <div class="footer-content">
+      <h2 class="footer-title">تواصل معي</h2>
+      <p class="footer-desc">
+        هل لديك مشروع وتريد شخص يحول أفكارك إلى واقع رقمي؟ لا تتردد، أنا هنا دائمًا للرد على أسئلتك أو الاستماع لمشروعك.
+      </p>
+
+      <div class="social-icons">
+        <a href="https://facebook.com/software.engineer.711" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/@Software_hackr" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/software_engineer711" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:abrahim71192@gmail.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/967711924474" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 ابراهيم الورافي. جميع الحقوق محفوظة.
+      </div>
+    </div>
+
+    <!-- زجاج تفاعلي -->
+    <div class="glass-effect2" id="glass2"></div>
+  </footer>
+
+  <script>
+    const glass2 = document.getElementById('glass2');
+    const footer = document.querySelector('.cosmic-footer');
+
+    // زجاج يتبع الفأرة داخل الـ Footer
+    footer.addEventListener('mousemove', (e) => {
+      glass2.style.left = `${e.clientX - 90}px`;
+      glass2.style.top = `${e.clientY - 90}px`;
+    });
+s
+  </script>
+
+  <script>
+    const starsContainer2 = document.getElementById('starsBg');
+
+    // إنشاء نجوم ديناميكيًا
+    const totalStars2 = 920;
+
+    for (let i = 0; i < totalStars2; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star-dot');
+      star.style.left = Math.random() * 100 + '%';
+      star.style.top = Math.random() * 100 + '%';
+      star.style.width = star.style.height = `${1 + Math.random() * 1.5}px`;
+      star.style.opacity = 0.2 + Math.random() * 0.3;
+      star.style.animationDelay = Math.random() * 3 + 's';
+      starsContainer2.appendChild(star);
+    }
+
+    // تأثير 3D Tilt (بدون مكتبات)
+    document.querySelectorAll('.tilt').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = ((y - centerY) / 10).toFixed(2);
+        const rotateY = ((x - centerX) / 10).toFixed(2);
+
+        card.querySelector('.service-card-inner').style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.querySelector('.service-card-inner').style.transform = `rotateX(0deg) rotateY(0deg)`;
+      });
+    });
+  </script>
+
+  <script>
+    const glass = document.getElementById('glass');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+
+    // زجاج يتحرك مع الفأرة
+    document.addEventListener('mousemove', (e) => {
+      glass.style.left = `${e.clientX - 90}px`;
+      glass.style.top = `${e.clientY - 90}px`;
+    });
+
+    // إظهار القائمة الجانبية
+    function toggleSidebar() {
+      sidebar.classList.toggle('active');
+      overlay.classList.toggle('active');
+    }
+
+    // إنشاء النجوم ديناميكيًا
+    const starsContainer = document.getElementById('stars');
+    const totalStars = 700;
+
+    for (let i = 0; i < totalStars; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.left = Math.random() * 100 + '%';
+      star.style.top = Math.random() * 100 + '%';
+      const size = 1.5 + Math.random() * 6;
+      star.style.width = star.style.height = `${size}px`;
+      star.style.opacity = 0.3 + Math.random() * 0.3;
+      star.style.animationDelay = Math.random() * 3 + 's';
+      starsContainer.appendChild(star);
+    }
+
+    // الشمس تتألق عند مرور الفأرة
+    const sun = document.getElementById('sun');
+
+    document.addEventListener('mousemove', (e) => {
+      const rect = sun.getBoundingClientRect();
+      const dx = e.clientX - rect.left;
+      const dy = e.clientY - rect.top;
+      sun.style.boxShadow = `0 0 40px #ffeb3b, 0 0 80px #f57c00, ${dx / 10}px ${dy / 10}px 20px rgba(255, 255, 255, 0.2)`;
+    });
+
+    sun.addEventListener('mouseleave', () => {
+      sun.style.boxShadow = `0 0 30px #fff, 0 0 60px #ffeb3b, 0 0 100px #ffeb3b`;
+    });
+  </script>
+
+</body>
+</html>
