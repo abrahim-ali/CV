@@ -753,6 +753,28 @@
       font-size: 0.9rem;
       color: #aaa;
     }
+    .service-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 30px;
+      border-radius: 30px;
+      background: linear-gradient(to right, #00eaff, #ff4ec2);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: glowBtn 1.5s infinite alternate;
+    }
+
+    @keyframes glowBtn {
+      0% { box-shadow: 0 0 10px #00eaff; }
+      100% { box-shadow: 0 0 20px #ff4ec2; }
+    }
+
+    .service-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff4ec2, 0 0 30px #00eaff;
+    }
 
     /* Responsive */
     @media (max-width: 768px) {
@@ -898,9 +920,16 @@
         <div class="services-container">
           <div class="service-card"><div class="service-icon">📱</div><div class="service-title">python ai</div><div class="service-desc">It is an integrated application that combines an AI chat, an advanced text editor, an AI image generator, a file format converter, tools for extracting and modifying text from images and files, interactive games, and programming courses from scratch to professionalism in Python, with the aim of meeting users' needs for entertainment, learning, and productivity in an easy and effective way.</div><a href="https://play.google.com/store/apps/details?id=org.information.information"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="جوجل بلاي" style="float: center;width: 200px;height: 50px;"></a></div>
           <div class="service-card"><div class="service-icon">📱</div><div class="service-title">Cybersecurity Lessons</div><div class="service-desc">This educational platform offers a unique and advanced experience in learning cybersecurity, combining specialized course content, interactive tools, and artificial intelligence technologies to provide personalized, interactive, and effective learning. The app is designed to be suitable for both beginners and professionals, offering a progressive learning path that covers cybersecurity fundamentals, ethical hacking techniques, data protection, encryption, and cyber incident response.</div><a href="https://play.google.com/store/apps/details?id=org.cybersecurity.abrahim711.org.cybersecurity.abrahim711"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="جوجل بلاي" style="float: center;width: 200px;height: 50px;"></a></div>
-          <div class="service-card"><div class="service-icon">🌐</div><div class="service-title">Vulnerability Scanning</div><div class="service-desc">This platform offers an integrated and advanced tool for scanning security vulnerabilities in systems, networks, and web applications, with the goal of uncovering weak spots and enhancing the cybersecurity level of organizations and individuals. The application relies on the latest technologies in the field of cybersecurity and features an easy-to-use interface and advanced features that help technical teams identify vulnerabilities quickly and accurately.</div></div>
-          <div class="service-card"><div class="service-icon">🔧</div><div class="service-title">AI photo and audio editor</div><div class="service-desc">This advanced platform combines image and audio editing using artificial intelligence technologies, offering innovative and easy-to-use tools that enable users to quickly and accurately modify and develop their creative content. Whether you're a photographer, content creator, or hobbyist, the app offers specialized tools for enhancing images and audio, as well as amazing transformational capabilities that allow users to create unique content.</div></div>
+          <div class="service-card"><div class="service-icon">🌐</div><div class="service-title">Website</div><div class="service-desc">This educational platform offers a professional website design and programming experience using HTML, CSS, JavaScript, React, and Vue. The code is clean, responsive, and runs fast on all devices.</div><a href="index1.html" class="service-button">Visit the website</a></div>
+          
+          <div class="service-card"><div class="service-icon">🌐</div><div class="service-title">Web development site</div><div class="service-desc">This educational platform offers a professional website design and programming experience using HTML, CSS, JavaScript, React, and Vue. The code is clean, responsive, and runs fast on all devices.</div><a href="index2.html" class="service-button">Visit the website</a></div>
+          
+          <div class="service-card"><div class="service-icon">🌐</div><div class="service-title">Future Store</div><div class="service-desc">This platform offers an enjoyable experience in store designs and product display in a beautiful, modern and contemporary way. Look at the creativity. </div><a href="index3.html" class="service-button">Visit the website</a></div>
+          
+          <div class="service-card"><div class="service-icon">🌐</div><div class="service-title">School of the Future</div><div class="service-desc">This platform offers an enjoyable experience of school designs in a beautiful, modern and contemporary way. Look at the creativity, imagination and beautiful, fabulous design.</div><a href="index4.html" class="service-button">Visit the website</a></div>
+          
           <div class="service-card"><div class="service-icon">🔥</div><div class="service-title">✅Advertising campaign management</div><div class="service-desc">Planning and implementing Google + facebook Ads campaigns. Preparing attractive marketing campaign images.Analyze and optimize results to get the best return on investment (ROI).Attract thousands of users to your apps with targeted advertising.</div></div>
+          
         </div>
       </section>
       <div class="card">
